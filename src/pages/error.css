@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:bold');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:medium');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.error{
+    display: flex;
+    width: 100%;
+   
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    background-color: #ffffff;
+}
+@keyframes pre {
+    0%   {width: 50px; height: 50px;}
+    25%  {width: 100px; height: 100px;}
+    50%  {width: 200px; height: 200px;}
+    75%  {width: 250px; height: 250px;}
+    100% {width: 300px; height: 300px;}
+}
+.error-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.error-svg {
+    width: 100%;
+       
+}
+
+.error-svg-im {
+    width: 300px;
+    height: 300px;
+    animation: pre  1s linear; 
+}
+
+.error-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-text h3  {
+    margin: 0 0 12.5px;
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #3d4246;
+}
+
+.error-link {
+    
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #989898;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+@keyframes prep {
+    0%   {margin-right: 2px;}
+    25%  {margin-right: 6px;}
+    50%  {margin-right: 8px;}
+    75%  {margin-right: 10px;}
+    100% {margin-right: 8px;}
+}
+.lefty {
+    margin-right: 8px;
+    animation: prep infinite  1s linear; 
+}
+.error-link:hover {
+    color: #6d6c6c;
+}
