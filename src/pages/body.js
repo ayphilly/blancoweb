@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import '../App.css';
 import {Preload} from '../component/Preload'
+import {ScrollTop} from '../component/scrolltop'
 import {Navbar} from './navbar'
 import {Slider} from './slider'
 import {About} from './about'
@@ -38,11 +39,12 @@ export class Body extends Component {
                     <Slider/>
                     
                     
-                    {/*<About/>
+                    <About/>
                     
                     <Collection/>
-                    <ProductSlider/> */}                  
-                    <ShopProduct/>                       
+                    <ProductSlider/>                  
+                    <ShopProduct/> 
+                    <ScrollTop/>                     
                 </div>
                 <div>
                     <Footer/>

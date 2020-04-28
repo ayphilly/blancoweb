@@ -1,0 +1,127 @@
+.footer {
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .footer-brand {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;  
+    float: left;
+    
+  }
+  .footer-ins, .footer-fb, .footer-tw {
+    margin: 20px;
+    color: #989898;
+  
+  }
+  .footer-brand , .footer-copy {
+    
+  }
+  .footer-copy {
+    display: flex;
+    flex-direction: row;     
+    align-items: center;
+    margin-top: 15px;
+    
+  }
+  .footer-copy p{
+    
+    font-size: 13px;
+    font-family: "Poppins","HelveticaNeue","Helvetica Neue",sans-serif;
+    color: #989898;
+  }
+  .footer-links ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;  
+    
+  }
+  
+  .footer-links ul li{
+    text-decoration: none;  
+    list-style: none;
+    margin: 10px;
+  }
+  
+  .footer-links ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    text-decoration-style: none;
+    color: #989898;
+  }
+  
+  .footer-links ul li a:hover {
+    
+    color: #838383;
+  }
+
+ /*Media Responsive*/
+@media screen and (min-width : 320px)
+and (max-width : 900px) {
+
+  
+  .footer-ins, .footer-fb, .footer-tw {
+    margin: 15px;
+    color: #989898;
+  
+  }
+  
+  .footer-copy {
+    display: flex;
+    flex-direction: row;     
+    align-items: center;
+    margin-top: 18px;
+    
+  }
+  .footer-copy p{
+    text-align: center;
+    font-size: 13px;
+    font-family: "Poppins","HelveticaNeue","Helvetica Neue",sans-serif;
+    color: #989898;
+    margin-left: 40px;
+  }
+  
+    .footer-links ul li{
+    font-size: 15px;
+    text-decoration: none;  
+    list-style: none;
+    margin: 5px;
+    }
+
+    .footer-links ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    text-decoration-style: none;
+    color: #989898;
+    text-align: center;
+    }
+
+}
+
+@media screen and (min-width : 1000px)
+and (min-width : 1024px){
+  .clist-container {
+    max-width: 80%;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .clist-ima img{  
+    width: 250px;  
+  }
+
+}

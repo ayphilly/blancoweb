@@ -1,0 +1,13 @@
+.scrolltop {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    z-index: 99;
+    background: black;
+    color: #fff;    
+    padding: 15px;
+    font-weight: bold;
+    
+}

@@ -480,8 +480,9 @@
   
 }
 
+/*footer
 .footer {
-  background-color: whitesmoke;
+  background-color: rgb(238, 238, 238);
   width: 100%;
 }
 .footer-container {
@@ -544,6 +545,8 @@
   
   color: #838383;
 }
+*/
+
 
 /*collection*/
 
@@ -663,22 +666,26 @@
 }
 
 .information-name {
-  background-color: #f1b1b1;
-  width: 250px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
   height: 30px;
 }
 .information-price {
-  background-color: #0b24a5;
+  font-size: 20px;
+  font-weight: bold;
+  color:#000;
   width: 100px;
   height: 30px;
   margin-top: 10px;
-  margin-bottom:10px;
+  
 }
 .information-color {
-  
+  display: flex;
+  flex-direction: column;  
   width: 250px;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 0;
   margin-bottom: 30px;
   
@@ -760,13 +767,36 @@
   display: flex;
   flex-direction: column;
   width: 150px;
-  margin-top: 30px;
+  margin-top: -10px;
 }
 
-.shopProduct-button button:nth-child(2) {
+.shopProduct-button button:nth-child(4) {
   margin-top: 10px;
  
 
+}
+.shopProduct-button .counter {
+  display: flex;
+  flex-direction: row;
+}
+.counter input {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  height: 40px;
+  width: 100px;
+}
+.button-increase, .button-decrease {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  text-align: center;  
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
 }
 .button-cart {
   background-color: #000000;
@@ -776,6 +806,7 @@
   width: 150px;
   height: 60px;
   cursor: pointer;
+  margin-top: 10px;
 }
 .button-buy {
   background-color: #000000;
@@ -785,6 +816,7 @@
   width: 150px;
   height: 60px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 /*Media Responsive*/

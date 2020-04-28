@@ -5,6 +5,27 @@ import '../App.css'
 
 export class ShopProduct extends Component {
     
+    state = {
+        volume : 1
+    }
+    
+    increase = ()=> {
+              
+        this.setState({
+            volume : this.state.volume+1
+        })
+        console.log(this.state.volume);
+    }
+    decrease = (e)=> {
+        e.preventDefault()    
+        if (this.volumee >=1 )  {
+            this.setState({
+                volume : this.state.volume-1
+            })
+            console.log(this.state.volume);
+        }  
+        return;
+    }
     render () {
         return (
             <div className="shopProduct-container">
@@ -23,8 +44,8 @@ export class ShopProduct extends Component {
                 </div>
                 <div className="shopProduct-information-container">
                     <div className="shopProduct-information">
-                        <div className="information-name"></div>
-                        <div className="information-price"></div>
+                        <div className="information-name">Simpson Collection</div>
+                        <div className="information-price"> <strong> $50</strong></div>
                         <div className="information-color">
                             <p> Color : </p>
                             <div className="colors-roundr">
@@ -49,11 +70,18 @@ export class ShopProduct extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="list-size"></div>
+                            {/*<div className="list-size"></div>*/}
                         </div>
                     </div>
                     <div className="shopProduct-button-cont">
                         <div className="shopProduct-button">
+                            <div className="counter">
+                               
+                                <button className="button-decrease" onClick={this.decrease}>-</button>
+                                <input  disabled={false} value={this.state.volume}/>
+                                <button className="button-increase" onClick={this.increase}>+</button>
+
+                            </div>
                             <button className="button-cart">ADD TO CART</button>
                             <button className="button-buy">BUY NOW</button>
                         </div>

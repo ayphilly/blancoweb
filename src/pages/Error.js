@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 //import error from '../svg/error.svg';
-import error from '../svg/error-404.svg';
+import error from '../svg/error.svg';
 import './error.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

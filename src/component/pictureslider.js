@@ -46,7 +46,7 @@ export class PictureSlider extends Component {
     render () {
         return (
             <div id="shopproduct" className="carousel slide" data-wow-duration="1s" data-ride="carousel">
-                <ol className="carousel-indicators" id="shopproduct-ind">
+                <ol className="carousel-indicators" id="shopproduct-ind" style={{bottom:"-10px"}}>
                     <li data-target="#shopproduct" data-slide-to="0" className="active"></li>
                     <li data-target="#shopproduct" data-slide-to="1"></li>
                     <li data-target="#shopproduct" data-slide-to="2"></li>
