@@ -1,7 +1,7 @@
 import React , {Component} from 'react'
 
 import {PictureSlider} from './pictureslider'
-import '../App.css'
+import './shop_product.css'
 
 export class ShopProduct extends Component {
     

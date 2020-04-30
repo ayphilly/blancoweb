@@ -1,5 +1,5 @@
 import React , {Component} from 'react'
-import '../App.css'
+import './collection.css'
 
 
 export class Collectproduct extends Component {

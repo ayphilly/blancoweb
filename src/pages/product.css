@@ -1,0 +1,274 @@
+/*prodcut paqe*/
+
+
+/*controls*/
+
+#product-next,
+#product-prev {
+    filter: invert(100%);
+   
+}
+#product-next {
+  
+  width: 100px;  
+  color: #000000;
+  
+}
+
+#product-prev {
+ 
+  width: 100px;  
+  color: #000000;
+  
+}
+.pr-text {
+  width: 100%; 
+  height: 40px; 
+  color: #f1b1b1;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.pr-text h3{
+  margin: 0 0 12.5px;
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #3d4246;
+}
+#product-car {
+    width: 100%;
+  }
+  .carousel-product {
+    display: flex;
+    flex-direction: column;   
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+   
+    
+  }
+  .neww {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  #carouselProduct {
+    padding: 0px;
+    
+  }
+  
+  .carousel-prod-btn {
+    margin-top: 50px;
+    
+  }
+  
+  .carousel-prod-btn button {
+    width: 130px;
+    height: 50px;
+    background-color: #000000;
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    box-shadow: 5px 10px 8px 2px #e7e7e7;
+  }
+  
+  #carousel-inner {
+    display: flex;
+    flex-direction: row;  
+    
+  }
+  .item-container {
+    margin-left: 50px;
+  }
+  
+  .item-product {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+  
+  }
+  #item-product-cont {
+    display: flex;
+    flex-direction: row; 
+    
+  }
+  .item-imaqe{  
+    width: 320px;
+  }
+  .item-text {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-text h4 {
+    margin: 0 0 12.5px;
+      font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+      font-weight: 600;
+      line-height: 1.2;
+      overflow-wrap: break-word;
+      word-wrap: break-word; 
+      color: #3d4246;
+    
+  }
+  .item-text p {
+  
+    margin: 0 0 8px;
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #3d4246;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .item-text .price {
+    font-size: 1.5vw;  
+    margin: 0 0 8px;
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #3d4246;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top:  -10px;
+  }
+  /*round colors*/
+
+.colors-round {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    justify-content: left;  
+    width: auto;
+    margin-top: -20px;
+     
+    
+  }
+  .round-red , .round-blue, .round-w {
+    margin: 5px;
+  }
+  .round-red {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: red;
+  }
+  
+  .round-blue{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: blue;
+  }
+  
+  .round-w{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: yellow;
+  }
+  
+  .round-red:hover, .round-blue:hover , .round-w:hover{
+    border: 1px solid rgb(206, 205, 205);
+    
+  }
+
+  
+/*Media Responsive*/
+@media screen and (min-width : 320px)
+and (max-width : 900px) {
+
+
+  .item-container {
+    margin-left: 20px;
+  }
+  
+  .item-product {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+  #item-product-cont {
+    display: flex;
+    flex-direction: row; 
+    
+  }
+
+  .item-imaqe{  
+    width: 320px;
+    justify-content: center;
+  }
+  .item-text {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+  }
+
+  #carousel-inner {
+    display: flex;
+    flex-direction: column;  
+    
+  }
+
+  .item-text .price {
+    
+    margin: 0 0 18px;
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #3d4246;
+    /*color: blue;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top:  -10px;
+  }
+
+
+
+}
+
+@media screen and (min-width : 1000px)
+and (min-width : 1024px){
+  .clist-container {
+    max-width: 80%;    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .clist-ima img{  
+    width: 250px;  
+  }
+
+}

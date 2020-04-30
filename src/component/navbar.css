@@ -1,0 +1,110 @@
+/*Nav Brand*/
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  
+  .App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-intro {
+    font-size: large;
+  }
+  
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @keyframes preloader {
+    0%   {height: 25px;}
+    25%  {height: 40px;}
+    50%  {height: 50px;}
+    75%  {height: 40px;}
+    100% {height: 25px;}
+  }
+  
+  .brand {
+    float: left;
+    margin: auto;
+    margin-top: 17px;
+    margin-left: 10px;
+    
+  }
+  
+  .App-brand {  
+    height: 30px;
+    
+  }
+  
+  /*NavBar*/
+  .newNav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .mainnav {
+    width: 100%;  
+    margin: auto;  
+    display: flex;
+    flex-direction: row;
+    background-color: black;  
+  }
+  .navul  {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .navul li a {
+    text-decoration: none;
+    margin-right: 25px;
+    color : white;
+    font-size: 18px; 
+    font-weight: bold;  
+  }
+  
+  .navul li a:hover {
+    padding: 0px;
+    color : white;
+    border-bottom: 3px solid #fff;
+    font-size: 18px;
+    opacity: 0.6;
+    transition: 0.5s ease;
+  }
+  #drop {
+    color: #fff;
+  }
+  #dropy {
+    position: absolute;
+    z-index: 999;
+    margin: auto;  
+    right: 0px;
+    margin-right:10px;
+    margin-top: 30px;
+    display: none;
+    padding: 10px;
+    border: 5px solid black;
+  }
+  .dropdownNav li {
+    text-decoration: none;
+    list-style-type: none;
+    
+  }
+  
+  .dropdownNav li a {
+    text-decoration: none;
+    margin-right: 25px;
+    color : white;
+    font-size: 18px; 
+    font-weight: bold;  
+  }

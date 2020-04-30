@@ -1,5 +1,5 @@
 import React , {Component} from 'react'
-import '../App.css'
+import './collection.css'
 import {Collectproduct} from './collectproduct'
 
 

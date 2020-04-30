@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React , {Component} from 'react';
-import '../App.css';
+import './navbar.css';
 import brand from '../svg/blancow.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WOW from 'wow.js' 

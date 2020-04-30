@@ -1,6 +1,6 @@
 /* eslint-disable */ 
 import React , {Component} from 'react'
-import '../App.css'
+import './product.css'
 import {Product} from './Product'
 import Product1 from '../pictures/1.png'
 import Product2 from '../pictures/2.png'

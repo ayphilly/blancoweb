@@ -30,7 +30,7 @@ export class Slider extends Component {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img className="d-block w-100" src={Slider0} alt="First slide"/>
-                        <div class="carousel-wordr">
+                        <div className="carousel-wordr">
                                 <h5>weweweewe</h5>
                                 <p>wwewewewew</p>
                                 <div className="slider-icon">
@@ -42,7 +42,7 @@ export class Slider extends Component {
                     </div>
                     <div className="carousel-item ">
                         <img className="d-block w-100" src={Slider1} alt="Second slide"/>
-                        <div class="carousel-word">
+                        <div className="carousel-word">
                                 <h5>weweweewe</h5>
                                 <p>wwewewewew</p>
                                 <div className="slider-icon">
@@ -53,7 +53,7 @@ export class Slider extends Component {
                     </div>
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Slider2} alt="Third slide"/>
-                        <div class="carousel-wordr">
+                        <div className="carousel-wordr">
                                 <h5>weweweewe</h5>
                                 <p>wwewewewew</p>
                                 <div className="slider-icon">

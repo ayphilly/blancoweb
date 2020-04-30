@@ -1,5 +1,5 @@
 import React , {Component} from 'react'
-import '../App.css'
+import './collection.css'
 import {Collectionlist} from './collectionlist'
 import Product1 from '../pictures/Product1.jpg'
 import Product2 from '../pictures/Product1.jpg'
