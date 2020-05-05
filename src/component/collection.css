@@ -82,7 +82,7 @@ cursor: pointer;
     left : 0;  
     right: 0;
     width: 60%;    
-    background-color: pink;    
+     
     display: inline-block;
         
         
@@ -94,7 +94,7 @@ cursor: pointer;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background-color: purple;
+    
     margin: 0 auto;
     text-align: center;
 }

@@ -6,7 +6,16 @@ import './shop_product.css'
 export class ShopProduct extends Component {
     
     state = {
-        volume : 1
+        volume : 1,
+        size : ''
+    }
+    onSize = (e) =>{
+        e.preventDefault();
+        var element = e.target;
+        this.setState({
+            size : element.innerHTML
+        })
+        
     }
     
     increase = ()=> {
@@ -16,9 +25,9 @@ export class ShopProduct extends Component {
         })
         console.log(this.state.volume);
     }
-    decrease = (e)=> {
-        e.preventDefault()    
-        if (this.volumee >=1 )  {
+    decrease = ()=> {
+           
+        if (this.state.volume >=1 )  {
             this.setState({
                 volume : this.state.volume-1
             })
@@ -41,6 +50,19 @@ export class ShopProduct extends Component {
                         <div></div>
                     </div>
 
+                    <div className = "shop-product-desc">
+                        <div className="desc-title">
+                            <p>Product Detail</p>
+                            <ul className="desc-details">
+                                <li>6 oz. 100% cotton tubular jersey</li> 
+                                <li>Double-needle bottom hem and sleeves</li>   
+                                <li>Shoulder-to-shoulder tape</li>                                   
+                                <li>Preshrunk to minimize shrinkage</li>                                   
+                            </ul>
+                        </div>
+                       
+                    </div>
+
                 </div>
                 <div className="shopProduct-information-container">
                     <div className="shopProduct-information">
@@ -58,14 +80,14 @@ export class ShopProduct extends Component {
                         </div>
                         <div className="information-size">
                             <div className="size-box">
-                                <p>Size : </p>
+                                <p>Size : <strong className="size-cloth"> {this.state.size}  </strong> </p>
                                 <div className="size-box-list">
                                     <ul>
-                                        <li>S</li>
-                                        <li>M</li>
-                                        <li>L</li>
-                                        <li>XL</li>
-                                        <li>XXL</li>
+                                        <li onClick={this.onSize}>S</li>
+                                        <li onClick={this.onSize}>M</li>
+                                        <li onClick={this.onSize}>L</li>
+                                        <li onClick={this.onSize}>XL</li>
+                                        <li onClick={this.onSize}>XXL</li>
                                         
                                     </ul>
                                 </div>
@@ -78,7 +100,7 @@ export class ShopProduct extends Component {
                             <div className="counter">
                                
                                 <button className="button-decrease" onClick={this.decrease}>-</button>
-                                <input  disabled={false} value={this.state.volume}/>
+                                <input  disabled={false} type="text" value={this.state.volume}/>
                                 <button className="button-increase" onClick={this.increase}>+</button>
 
                             </div>
@@ -86,6 +108,7 @@ export class ShopProduct extends Component {
                             <button className="button-buy">BUY NOW</button>
                         </div>
                     </div>
+                    
                 </div>
             </div>
 

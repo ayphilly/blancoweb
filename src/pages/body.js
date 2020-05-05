@@ -3,9 +3,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import '../App.css';
 import {Preload} from '../component/Preload'
 import {ScrollTop} from '../component/scrolltop'
+import {Newsletter} from '../component/newsletter'
 import {Navbar} from '../component/navbar'
-import {Slider} from './slider'
+import {Slider} from '../component/slider'
 import {About} from './about'
+import {SignIn} from './sign-in'
+import {Register} from '../component/register'
+import {Login} from '../component/login'
 import {ProductSlider} from './ProductSlider'
 import {Collection} from '../component/collection'
 import {ShopProduct} from '../component/shop_product'
@@ -43,7 +47,7 @@ export class Body extends Component {
                     
                     <Collection/>
                     <ProductSlider/>                  
-                    <ShopProduct/> 
+                    <SignIn/> 
                     <ScrollTop/>                     
                 </div>
                 <div>

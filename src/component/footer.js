@@ -20,9 +20,9 @@ export  class Footer extends Component {
                         </ul>
                     </div>
                     <div className="footer-brand">
-                        <FontAwesomeIcon icon={['fab', 'instagram'] }  size="1.5x" className="footer-ins"/>
-                        <FontAwesomeIcon icon={['fab', 'facebook-f'] }  size="1.5x" className="footer-fb" />
-                        <FontAwesomeIcon icon={['fab', 'twitter'] }  size="1.5x" className="footer-tw"/>
+                        <FontAwesomeIcon icon={['fab', 'instagram'] }  size="1x" className="footer-ins"/>
+                        <FontAwesomeIcon icon={['fab', 'facebook-f'] }  size="1x" className="footer-fb" />
+                        <FontAwesomeIcon icon={['fab', 'twitter'] }  size="1x" className="footer-tw"/>
                     </div>
                     
                     

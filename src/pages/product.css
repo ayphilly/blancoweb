@@ -1,26 +1,6 @@
-/*prodcut paqe*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
 
 
-/*controls*/
-
-#product-next,
-#product-prev {
-    filter: invert(100%);
-   
-}
-#product-next {
-  
-  width: 100px;  
-  color: #000000;
-  
-}
-
-#product-prev {
- 
-  width: 100px;  
-  color: #000000;
-  
-}
 .pr-text {
   width: 100%; 
   height: 40px; 
@@ -29,63 +9,72 @@
   margin-bottom: 50px;
   margin-top: 20px;
 }
-
+#container-ow {
+  
+  overflow: hidden;
+}
 .pr-text h3{
   margin: 0 0 12.5px;
-    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
-    font-weight: 600;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 900;
     line-height: 1.2;
     overflow-wrap: break-word;
     word-wrap: break-word; 
-    color: #3d4246;
+    color: #000;
 }
 #product-car {
     width: 100%;
   }
-  .carousel-product {
+
+  #carousel-product {
     display: flex;
     flex-direction: column;   
-    width: 100%;
+    width: 100%;  
     margin-top: 10px;
     text-align: center;
-    margin-bottom: 50px;
-   
-    
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
   }
+ 
   .neww {
+   
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     align-content: center;
-  }
-  #carouselProduct {
-    padding: 0px;
     
   }
-  
+ 
   .carousel-prod-btn {
     margin-top: 50px;
     
   }
   
-  .carousel-prod-btn button {
+  .carousel-prod-btn .prod-btn {
     width: 130px;
     height: 50px;
     background-color: #000000;
-    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    color:#fff;
+    opacity:.9;
+    font-family: "Montserrat",sans-serif;
     font-weight: 600;
     line-height: 1.2;
     overflow-wrap: break-word;
     word-wrap: break-word; 
-    box-shadow: 5px 10px 8px 2px #e7e7e7;
+    box-shadow: 3px 0px 5px 0px #e7e6e6;
+    transition: 0.3s;
+    border: none;
+    border-radius: 5px;
+  }
+  .prod-btn:hover {
+    opacity:1;
+    color:#fff;
   }
   
-  #carousel-inner {
-    display: flex;
-    flex-direction: row;  
-    
-  }
+  
   .item-container {
     margin-left: 50px;
   }
@@ -94,6 +83,9 @@
     display: flex;
     flex-direction: column;
     padding: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
     
   
   }
@@ -115,35 +107,35 @@
   
   .item-text h4 {
     margin: 0 0 12.5px;
-      font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+      font-family: "Montserrat",sans-serif;
       font-weight: 600;
       line-height: 1.2;
       overflow-wrap: break-word;
       word-wrap: break-word; 
-      color: #3d4246;
+      color: #000;
     
   }
   .item-text p {
   
     margin: 0 0 8px;
-    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-weight: 600;
     line-height: 1.2;
     overflow-wrap: break-word;
     word-wrap: break-word; 
-    color: #3d4246;
+    color: #000;
     margin-top: 10px;
     margin-bottom: 20px;
   }
   .item-text .price {
     font-size: 1.5vw;  
     margin: 0 0 8px;
-    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
-    font-weight: 600;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
     line-height: 1.2;
     overflow-wrap: break-word;
     word-wrap: break-word; 
-    color: #3d4246;
+    color: #000;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-top:  -10px;
@@ -182,19 +174,27 @@
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-color: yellow;
+    background-color: green;
   }
   
   .round-red:hover, .round-blue:hover , .round-w:hover{
-    border: 1px solid rgb(206, 205, 205);
+    border: 2px solid black;
     
+  }
+
+  .item-a { 
+    max-width: 100%;
   }
 
   
 /*Media Responsive*/
 @media screen and (min-width : 320px)
 and (max-width : 900px) {
+  
+  #slider-d {
+    overflow: hidden;
 
+  }
 
   .item-container {
     margin-left: 20px;
@@ -237,7 +237,7 @@ and (max-width : 900px) {
   .item-text .price {
     
     margin: 0 0 18px;
-    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-weight: 600;
     font-size: 20px;
     overflow-wrap: break-word;
@@ -250,25 +250,5 @@ and (max-width : 900px) {
   }
 
 
-
-}
-
-@media screen and (min-width : 1000px)
-and (min-width : 1024px){
-  .clist-container {
-    max-width: 80%;    
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 30px;
-    margin: 0 auto;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    
-    
-  }
-  .clist-ima img{  
-    width: 250px;  
-  }
 
 }

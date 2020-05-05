@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+.register-form {   
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;    
+   
+    margin-bottom: 20px;
+    align-content: end;
+    align-items: center;
+}
+
+.register-form h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+.names {
+    display: flex;
+    flex-direction: row;
+      
+    width: 100%;
+}
+.names .first-name, .last-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.names input {
+    width: 500px;
+    height: 50px;
+    background-color: none;
+    margin-right: 50px;
+    padding: 20px;
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;    
+    margin-top: 10px;
+    
+}
+
+.contact .mail, .phone-number {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    width: 500px;
+    height: 50px;
+    background-color: none;
+    margin-right: 50px;
+    padding:20px;
+}
+
+.password-input {
+    display: flex;
+    flex-direction: row;    
+    margin-top: 10px;
+    
+}
+
+.password-input .pword, .c-pword {
+    display: flex;
+    flex-direction: column;
+}
+
+.password-input input {
+    width: 500px;
+    height: 50px;
+    background-color: none;
+    margin-right: 50px;
+    padding:20px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.bottom .c-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+
+input {
+    background-color: transparent;
+    color: rgb(14, 14, 14);
+    border: 3px solid #000;
+    font-size: 20px;  
+}
+
+input:focus{
+    background-color:none;
+    outline-color: #000;
+    border-color: #000;
+    outline-width: 0ch;
+}
+.check-mark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.button-create {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    text-align: center;  
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    
+}
+
+.login-link a {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 15px;
+    color: #000;
+    text-decoration-color: #000;
+    text-decoration: underline;
+    opacity: .8;
+    margin-top: 20px;
+    
+}
+
+.login-link a:hover {
+    
+    color: #000;
+    text-decoration-color: #000;
+    text-decoration: underline;
+    opacity: 1;
+    
+}
+

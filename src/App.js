@@ -7,6 +7,7 @@ import {Body} from './pages/body'
 //import {Slider} from './slider'
 import {About} from './pages/about'
 import {Error} from './pages/Error.js'
+import {Register} from './component/register.js'
 //import {ProductSlider} from './ProductSlider'
 //import {Collection} from './collection'
 import {ShopProduct} from './component/shop_product'
@@ -60,6 +61,7 @@ class App extends Component {
                 <main>
                     <Switch>
                         <Route path="/" component={Body} exact />
+                        <Route path="/register" component={Register} />
                         <Route path="/about" component={About} />
                         <Route path="/shop" component={ShopProduct} />
                         <Route path="/shop/:productid" component={ShopProduct} />

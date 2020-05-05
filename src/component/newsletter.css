@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+.newsletter-form {   
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;    
+   
+    margin-bottom: 20px;
+    align-content: end;
+    align-items: center;
+}
+.newsletter-form h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 30px;
+}
+.newsletter-form h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+.newsletter {
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe .email-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe input {
+    width: 500px;
+    height: 50px;
+    background-color: none;
+    margin-right: 50px;
+    padding: 20px;
+    
+}
+
+.button-subscribe{
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    text-align: center;  
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    margin-left: -10px;
+}

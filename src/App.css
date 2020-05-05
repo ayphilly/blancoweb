@@ -183,6 +183,8 @@
 .lil-about {
   background-color: #fff;
   width: 100%;
+  text-align: center;
+
 }
 .lil-about-main {
   display: flex;
@@ -190,16 +192,17 @@
   margin-top: 20px;
   width: 100%;  
   padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .lil-about-text {
   width: 50%;  
 }
 .lil-about-text p {
-  font-family: "Poppins","HelveticaNeue","Helvetica Neue",sans-serif;
-  text-transform: uppercase;
+  font-family: "Montserrat",sans-serif; 
   line-height: 1.5em;
   font-size: 1vw;
-  font-weight: bold;
+  font-weight: 500;
   font-style: oblique;
 }
 
