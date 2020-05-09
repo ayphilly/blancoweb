@@ -35,10 +35,7 @@ export class Body extends Component {
     render () {
         return (
             <div className="main">
-                <div>
-                        <Navbar/>
-                </div>
-                
+               
                 <div>
                     <Slider/>
                     
@@ -47,12 +44,10 @@ export class Body extends Component {
                     
                     <Collection/>
                     <ProductSlider/>                  
-                    <SignIn/> 
+                    <Newsletter/> 
                     <ScrollTop/>                     
                 </div>
-                <div>
-                    <Footer/>
-                </div>
+                
             </div>
         )
     }

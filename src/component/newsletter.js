@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 import './newsletter.css'
+import WOW from 'wow.js' 
 export class Newsletter extends Component {
+    componentDidMount = () =>  {
+        const wow = new WOW();
+        wow.init();        
+    }
     render () {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid wow fadeInLeft">
                 <div className ="newsletter-form">
                 <h3>
                     SUBSCRIBE TO OUR NEWSLETTER 

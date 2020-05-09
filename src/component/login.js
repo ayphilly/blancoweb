@@ -16,7 +16,7 @@ export class Login extends Component {
                 
                 <form>
                     <h3>
-                        Welcome, Sign in 
+                        Welcome, Sign in to your Blanco account 
                     </h3>
                     
                     <div className="sign-in">

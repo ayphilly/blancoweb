@@ -1,10 +1,11 @@
 /* eslint-disable */
 import React , {Component} from 'react';
 import './navbar.css';
+
 import brand from '../svg/blancow.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import WOW from 'wow.js' 
-import ReactWOW from 'react-wow'
+import WOW from 'wow.js' ;
+import { Link } from 'react-router-dom';
 
 export class Navbar extends Component {
     state = {
@@ -60,8 +61,24 @@ export class Navbar extends Component {
                         </div>
                         
                         <ul className='navul'>
-                            <li> <a href="#"> Home </a></li>
-                            <li> <a href="#"> About Us </a></li>
+                            <li> 
+                                <Link className="error-link" to="/" style={{textDecoration:'none'}}>
+                                    
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="error-link" to="/about" style={{textDecoration:'none'}}>
+                                    
+                                    About Us
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="error-link" to="/signin" style={{textDecoration:'none'}}>
+                                   
+                                    Sign-In
+                                </Link>
+                            </li>
                             <li> 
                                 <a href="#" onClick={this.myfunction}> Shop <span className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span> </a>
                                 <ul className="dropdownNav" id="dropy">

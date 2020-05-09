@@ -1,0 +1,18 @@
+
+#page {
+    margin : 0 auto;
+    margin-top: 40px;
+    height: 100%;    
+    display: flex;
+    align-items: center;
+
+}
+
+#page1 {
+    margin : 0 auto;
+    margin-top: 40px;
+    height: 470px;    
+    display: flex;
+    align-items: center;
+
+}

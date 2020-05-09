@@ -15,7 +15,7 @@ export class Register extends Component {
                 
                 <form>
                     <h3>
-                        create new account 
+                        Create your Blanco account 
                     </h3>
                     <div className="names">
                         <div className="first-name">

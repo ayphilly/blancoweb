@@ -40,6 +40,36 @@
     height: 30px;
     
   }
+
+  
+#barIcon {
+  display: inline-block;
+  cursor: pointer;
+  display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  transition: 0.5s;
+  margin: 6px 0;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
   
   /*NavBar*/
   .newNav{
@@ -69,16 +99,16 @@
     text-decoration: none;
     margin-right: 25px;
     color : white;
-    font-size: 18px; 
+    font-size: 15px; 
     font-weight: bold;  
   }
   
   .navul li a:hover {
     padding: 0px;
-    color : white;
-    border-bottom: 3px solid #fff;
-    font-size: 18px;
+    color : white;    
+    font-size: 15px;
     opacity: 0.6;
+ 
     transition: 0.5s ease;
   }
   #drop {
@@ -108,3 +138,43 @@
     font-size: 18px; 
     font-weight: bold;  
   }
+
+  
+/*Media Responsive*/
+@media screen and (min-width : 320px)
+and (max-width : 500px) {
+  .mainnav {
+    width: 100%;
+    height: 70px;
+    margin: auto;  
+    display: flex;
+    flex-direction: row;
+    background-color: black;  
+    justify-content: center;
+    align-items: center;
+
+  }
+  .brand {
+    float: left;
+    margin: auto;
+    margin-top: auto;
+    margin-left: 10px;
+    
+  }
+  
+  .App-brand {  
+    height: 30px;
+    
+  }
+  .navul {
+    display: none;
+  }
+
+  #barIcon {
+    display: block;
+    float: right; 
+    margin-right: 20px;
+  }
+
+}
+
