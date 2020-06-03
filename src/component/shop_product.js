@@ -50,7 +50,7 @@ export class ShopProduct extends Component {
                         <div></div>
                     </div>
 
-                    <div className = "shop-product-desc">
+                    <div className="shop-product-desc">
                         <div className="desc-title">
                             <p>Product Detail</p>
                             <ul className="desc-details">

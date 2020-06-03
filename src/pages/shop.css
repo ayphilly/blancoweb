@@ -1,0 +1,24 @@
+.market {
+    width:100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    
+  }
+  .postee{
+    display: flex;
+    flex-direction: row;
+    padding:30px;
+    flex-wrap: wrap;
+    height: 50vh;
+  
+  }
+  
+  
+  .lipost {
+   
+    margin-bottom: 10px;
+  
+  }

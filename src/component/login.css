@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
-
+.log {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.form-form {
+    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
 .login-form {   
     margin-top:20px;
     display: flex;
@@ -103,16 +117,49 @@ input:focus{
     
 }
 
+.signin-link .linkk {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 15px;
+    color: #000;
+    text-decoration-color: #000;
+    text-decoration: underline;
+    opacity: .8;
+    margin-top: 20px;
+    
+}
+
+.signin-link .linkk:hover {
+    
+    color: #000;
+    text-decoration-color: #000;
+    text-decoration: underline;
+    opacity: 1;
+    
+}
+
 
 /*Media Responsive*/
 @media screen and (min-width : 320px)
-and (max-width : 900px) {
-    
+and (max-width : 500px) {
+    .form-form {   
+        margin-top:40px;
+        display: flex;
+        flex-direction: column; 
+       
+        margin-bottom: 20px;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+    }
     .login-form h3 {
         font-family: 'Montserrat';
         font-weight: 800;
         font-size: 15px;
         margin-bottom: 20px;
+        margin-bottom: 20px;
+        align-content: end;
+        align-items: center;
     }
 
     label {
@@ -139,6 +186,97 @@ and (max-width : 900px) {
     .sign-in input {
         width: 300px;
         height: 50px;
+        background-color: none;
+        margin-right: 0px;
+        padding:20px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    input {
+        background-color: transparent;
+        color: rgb(14, 14, 14);
+        border: 3px solid #000;
+        font-size: 20px;  
+    }
+
+    input:focus{
+        background-color:none;
+        outline-color: #000;
+        border-color: #000;
+        outline-width: 0ch;
+    }
+
+    .button-login {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        text-align: center;  
+        width: 150px;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Montserrat';
+        font-weight: 800;
+        
+    }
+
+}
+
+
+/*Media Responsive*/
+@media screen and (min-width : 500px)
+and (max-width : 900px) {
+    .form-form {   
+        margin-top:40px;
+        display: flex;
+        flex-direction: column; 
+       
+        margin-bottom: 20px;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .login-form h3 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-bottom: 20px;
+        align-content: end;
+        align-items: center;
+    }
+
+    label {
+        font-family: 'Montserrat';
+        font-size: 10\5px;
+        font-weight: 600;
+    }
+
+
+    .sign-in {
+        display: flex;
+        flex-direction: column;    
+        margin-top: 10px;
+        
+    }
+
+    .sign-in .mail, .pword {
+        display: flex;
+        flex-direction: column;
+    }
+    .pword {
+        margin-top : 20px;
+    }
+    .sign-in input {
+        width: 500px;
+        height: 70px;
         background-color: none;
         margin-right: 0px;
         padding:20px;

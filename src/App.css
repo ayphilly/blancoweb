@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:bold');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
-
+@import url('https://db.onlinewebfonts.com/c/8e97f88029e50c58d9f0deef4c821a35?family=Autograf+PERSONAL+USE+ONLY');
 .App {
   width: max-width;
   height: max-height;
   margin: auto;
   display: flex;
   flex-direction: column;
-  font-family: lora,serif;
+  font-family:'Montserrat',serif;
+ 
 }
 
-.main {  
+.main {    
   display: flex;
-  flex-direction: column;
+  flex-direction: column;    
+   
 }
+
 .preload-container {
   width: 100%;
   height: 100%;
@@ -81,6 +84,7 @@
   height: 30px;
   
 }
+
 
 
 /*Slider*/
@@ -156,6 +160,7 @@
   background-color: #fff;
   width: 100%;
   text-align: center;
+ 
 
 }
 .lil-about-main {
@@ -166,16 +171,15 @@
   padding: 20px;
   justify-content: center;
   align-items: center;
+  
 }
 .lil-about-text {
   width: 50%;  
 }
 .lil-about-text p {
-  font-family: "Montserrat",sans-serif; 
-  line-height: 1.5em;
-  font-size: 1vw;
-  font-weight: 500;
-  font-style: oblique;
+  font-family: "Autograf PERSONAL USE ONLY";   
+  font-size: 50px;
+  color: #000;
 }
 
 .lil-about-btn {

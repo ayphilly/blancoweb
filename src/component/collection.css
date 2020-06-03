@@ -93,7 +93,7 @@ cursor: pointer;
     font-weight: 800;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: #000;
     
     margin: 0 auto;
     text-align: center;
@@ -101,14 +101,26 @@ cursor: pointer;
 
 /*Media Responsive*/
 @media screen and (min-width : 320px)
-and (max-width : 900px) {
+and (max-width : 600px) {
+
+  .collection-container {
+    width: 100%;
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    }
 
   .clist-container {
-    max-width: 80%;    
+    max-width: 90%;    
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-gap: 30px;
-    margin: 10px;    
+    margin:10px;       
     
   }
   .clist-ima img{  
@@ -118,8 +130,8 @@ and (max-width : 900px) {
 
 }
 
-@media screen and (min-width : 1000px)
-and (min-width : 1024px){
+@media screen and (min-width : 600px)
+and (min-width : 900px){
   .clist-container {
     max-width: 80%;    
     display: grid;

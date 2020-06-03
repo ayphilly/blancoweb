@@ -1,6 +1,6 @@
 import React , {Component} from 'react'
 import './product.css';
-import $ from 'jquery'
+
 
 export class Product extends Component {
     

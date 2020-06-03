@@ -10,8 +10,9 @@ export class About extends Component {
                     <div className="lil-about-text">
                         <p>
                         {/*" Setting The White Space With Each Design " <br/>*/} 
-                        " Defining The White     Space That Matters As A Brand " <br/>                        
-                        </p>                    
+                         " it's more than a roundie  "   &trade;                    
+                        </p>   
+                                 
                     </div>
             </div>
             </div>

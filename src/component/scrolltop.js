@@ -1,7 +1,7 @@
-import React ,{Component} from 'react';
+import React  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './scrolltop.css';
-import $ from 'jquery';
+
 export class ScrollTop extends React.Component {
    state = {
        is_visible: false

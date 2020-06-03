@@ -11,3 +11,43 @@
     font-weight: bold;
     
 }
+
+
+/*Media Responsive*/
+@media screen and (min-width : 320px)
+and (max-width : 900px) {
+
+    .scrolltop {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        z-index: 99;
+        background: black;
+        color: #fff;    
+        padding: 15px;
+        font-weight: bold;
+        
+    }
+  
+
+}
+
+@media screen and (min-width : 1000px)
+and (min-width : 1024px){
+    .scrolltop {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 100px;
+        right: 0;
+        z-index: 99;
+        background: black;
+        color: #fff;    
+        padding: 15px;
+        font-weight: bold;
+        
+    }
+
+}

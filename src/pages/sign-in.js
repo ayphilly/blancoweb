@@ -32,7 +32,7 @@ export class SignIn extends Component {
             )
         }else {
             return (
-                <div className="container-fluid" id="page">
+                <div className="container-fluid " id="page">
                     <Register
                         Close={this.CloseUp}
                     />                    

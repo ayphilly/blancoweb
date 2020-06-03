@@ -7,7 +7,7 @@ import 'popper.js';
 import Product1 from '../pictures/7.png'
 import Product2 from '../pictures/11.png'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import WOW from 'wow.js' 
 export class PictureSlider extends Component {
 

@@ -1,22 +1,39 @@
 import React, {Component} from 'react';
 import './login.css'
 import WOW from 'wow.js' 
+import { Link } from 'react-router-dom';
 export class Login extends Component {
 
     componentDidMount = () =>  {
         const wow = new WOW();
         wow.init();
+        this.reveal();
         
+    }
+
+    state = {
+        reflink: ''
+
+    }
+    reveal = ()=> {
+        let flink = this.props.Open;
+    
+        if (flink) {
+            this.setState({ reflink : true  });
+        }else {
+            this.setState({ reflink : false  });
+        }
+
     }
 
     render () {
         return (
-            <div className="container-fluid wow fadeInLeft">
-                <div className ="login-form">
+            <div className="container-fluid wow fadeInLeft log">
+                <div className="login-form">
                 
-                <form>
+                <form className="form-form">
                     <h3>
-                        Welcome, Sign in to your Blanco account 
+                        Welcome,<br/> Sign in to your Blanco account 
                     </h3>
                     
                     <div className="sign-in">
@@ -33,8 +50,13 @@ export class Login extends Component {
                     <div className="bottom">                        
                         <button type="submit" className="button-create">CREATE</button>
                         <div className="signin-link">
-                            <a href="#" onClick={this.props.Open}>Don't have an account ? Register here</a>                     
+                            
+                            { this.state.reflink ? <a href="#" onClick={this.props.Open}>Don't have an account ? Register here</a>
+                              : <Link className="linkk" to="/register" style={{textDecoration:'none'}}>Don't have an account ? Register here </Link>
+                           }      
+
                         </div>
+                       
                     </div>
       
                 </form>

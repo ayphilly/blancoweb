@@ -9,7 +9,7 @@ export class Newsletter extends Component {
     render () {
         return (
             <div className="container-fluid wow fadeInLeft">
-                <div className ="newsletter-form">
+                <div className="newsletter-form">
                 <h3>
                     SUBSCRIBE TO OUR NEWSLETTER 
                 </h3>                

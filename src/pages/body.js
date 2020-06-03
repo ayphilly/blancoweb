@@ -1,19 +1,16 @@
 import React, {Component} from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import '../App.css';
-import {Preload} from '../component/Preload'
+
 import {ScrollTop} from '../component/scrolltop'
 import {Newsletter} from '../component/newsletter'
-import {Navbar} from '../component/navbar'
+
 import {Slider} from '../component/slider'
 import {About} from './about'
-import {SignIn} from './sign-in'
-import {Register} from '../component/register'
-import {Login} from '../component/login'
+
 import {ProductSlider} from './ProductSlider'
 import {Collection} from '../component/collection'
-import {ShopProduct} from '../component/shop_product'
-import {Footer} from '../component/footer'
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -35,19 +32,12 @@ export class Body extends Component {
     render () {
         return (
             <div className="main">
-               
-                <div>
-                    <Slider/>
-                    
-                    
-                    <About/>
-                    
-                    <Collection/>
-                    <ProductSlider/>                  
-                    <Newsletter/> 
-                    <ScrollTop/>                     
-                </div>
-                
+                <Slider/>   
+                <About/>
+                <Collection/>
+                <ProductSlider/>                  
+                <Newsletter/> 
+                <ScrollTop/> 
             </div>
         )
     }

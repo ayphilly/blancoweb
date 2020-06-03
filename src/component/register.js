@@ -1,21 +1,43 @@
 import React, {Component} from 'react';
 import './register.css'
+import { Link } from 'react-router-dom';
 import WOW from 'wow.js' 
 export class Register extends Component {
     componentDidMount = () =>  {
         const wow = new WOW();
         wow.init();
+        this.reveal()
         
     }
+    state = {
+        reflink: ''
 
+    }
+    reveal = ()=> {
+        let flink = this.props.Close;
+    
+        if (flink) {
+            this.setState({ reflink : true  });
+        }else {
+            this.setState({ reflink : false  });
+        }
+
+    }
+    
+    
     render () {
+            
+        
+        
+    
         return (
-            <div className="container-fluid wow fadeInLeft">
-                <div className ="register-form">
+            <div className="container-fluid wow fadeInLeft reg">
+                <div className="register-form">
                 
                 <form>
                     <h3>
-                        Create your Blanco account 
+                        Welcome, <br/>
+                        Create  your Blanco account 
                     </h3>
                     <div className="names">
                         <div className="first-name">
@@ -34,7 +56,7 @@ export class Register extends Component {
                             <input type="text" className="email" name="email" id="Email" placeholder="Email"></input>
                         </div>
                         <div className="phone-number">
-                            <label for="inputNumber">PHONE NUMBER</label>
+                            <label for="number">PHONE NUMBER</label>
                             <input type="text" className="number" id="pnumber" placeholder="+234"></input>
                         </div>         
                     </div>
@@ -43,10 +65,10 @@ export class Register extends Component {
                             <label for="password">PASSWORD</label>
                             <input type="text" className="password" name="password" id="pword" placeholder="Password"></input>
                         </div>
-                        <div className="c-pword">
-                            <label for="cpword">CONFIRM PASSWORD</label>
-                            <input type="password" className="cpword" id="c-pword" placeholder="Confirm Password"></input>
-                        </div>         
+                        <div className="pword">
+                            <label for="password">CONFIRM PASSWORD</label>
+                            <input type="text" className="password" name="cpassword" id="pword" placeholder="Password"></input>
+                        </div>                             
                     </div>
                     <div className="bottom">
                         <div className="c-box">
@@ -54,7 +76,9 @@ export class Register extends Component {
                         </div>
                         <button type="submit" className="button-create">CREATE</button>
                         <div className="login-link">
-                            <a href="#" onClick={this.props.Close}>Already have an account ? Login here</a>                     
+                           { this.state.reflink ? <a href="#" onClick={this.props.Close}>Already have an account ? Login here</a>
+                              : <Link className="linkk" to="/login" style={{textDecoration:'none'}}>Already have an account ? Login here </Link>
+                           }                         
                         </div>
                     </div>
       
