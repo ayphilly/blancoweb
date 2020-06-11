@@ -6,11 +6,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export  class Footer extends Component {
     render () {
+        const date = new Date();
+        const year = date.getFullYear();
         return (
             <div className="footer">
                 <div className="footer-container ">
                     <div className="footer-copy">
-                        <p> Copyright © 2020 - Blanco Inc - All rights reserved </p>
+                        <p> Copyright © {year} - Blanco Inc - All rights reserved &#x1F49D;</p>
                     </div>
                     <div className="footer-links">
                         <ul>

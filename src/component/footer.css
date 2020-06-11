@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-around
   
   }
   .footer-brand {
@@ -20,6 +20,7 @@
     align-content: space-around;
     justify-content: center;  
     float: left;
+    
     
   }
   .footer-ins, .footer-fb, .footer-tw {
@@ -31,7 +32,7 @@
     flex-direction: row;     
     align-items: center;
     margin-top: 15px;
-    margin-left: 10px;
+    
   }
   .footer-copy p{
     font-weight: 700;
