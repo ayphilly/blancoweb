@@ -1,3 +1,6 @@
+.sig {
+    height: 100vh;
+}
 .sign-in {
     display: flex;
     align-items: center;
@@ -7,7 +10,7 @@
 #page {
     margin : 0 auto;
     margin-top: 40px;
-    height: 100%;    
+    height: 100vh;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +20,7 @@
 #page1 {
     margin : 0 auto;
     margin-top: 40px;
-    height: 470px;    
+    height: 100vh;   
     display: flex;
     align-items: center;
 

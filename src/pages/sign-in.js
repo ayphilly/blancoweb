@@ -24,7 +24,7 @@ export class SignIn extends Component {
     render () {
         if (this.state.clicked) {
             return (
-                <div className="container-fluid" id="page1">
+                <div className="container-fluid sig" id="page1">
                     <Login
                         Open={this.OpenUp}
                     />
@@ -32,7 +32,7 @@ export class SignIn extends Component {
             )
         }else {
             return (
-                <div className="container-fluid " id="page">
+                <div className="container-fluid sig" id="page">
                     <Register
                         Close={this.CloseUp}
                     />                    

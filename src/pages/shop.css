@@ -1,24 +1,81 @@
-.market {
-    width:100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    
-  }
-  .postee{
-    display: flex;
-    flex-direction: row;
-    padding:30px;
-    flex-wrap: wrap;
-    height: 50vh;
+.shopy{
+  height: 100vh;
+  display:flex;
+  flex-direction: row;
+  width: 100%;  
+  padding-top: 100px;
+
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a{
+  background-color: #000 ;
+  border-color: #000 ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid #000 ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a,
+ .pagination > .active > span,
+  .pagination > .active > a:hover,
+  .pagination > .active > span:hover,
+  .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #000 ;
+  border-color: #000;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: #000
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
+
+.shop-product{
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  align-items: flex-end;
   
-  }
-  
-  
-  .lipost {
-   
-    margin-bottom: 10px;
-  
-  }
+}
+.prod {
+  display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bar {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+.shop-bar{  
+  color:#000;
+  text-align: center;
+  height: 150vh;
+}
+.mypost{
+  margin-right:10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mypost .ba {
+  position: absolute;
+  top:0;
+  left:0;
+}
+.post-title {
+  font-size: 3px;
+}

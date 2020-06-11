@@ -124,8 +124,6 @@ export class ProductSlider extends Component {
                         id="owl-theme"
                         {...this.state.options}
                         autoplay={true}
-                        
-
                         > 
                         
                         {this.products}

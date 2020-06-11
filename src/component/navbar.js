@@ -80,13 +80,18 @@ export class Navbar extends Component {
                                 </Link>
                             </li>
                             <li> 
-                                <a href="#" onClick={this.myfunction}> Shop <span className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span> </a>
+                                <Link onMouseOver={this.myfunction} className="error-link" to="/shop" style={{textDecoration:'none'}}>Shop <span className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span>  </Link>
                                 <ul className="dropdownNav" id="dropy">
                                     <li> <a href="#"> T-Sirts </a></li>
                                     <li> <a href="#"> Hoodie </a></li>
                                     <li> <a href="#"> Caps </a></li>
                                 </ul>
-                            </li>                            
+                            </li>
+                            <li className="cart-buy">
+                                <FontAwesomeIcon icon={['fas', 'shopping-bag'] } style={{ color: 'white', height:30, width:30}} size="2.5x" />
+                                <strong class="amount">0</strong>
+                            </li>
+
                         </ul>
                         <div id="barIcon" >
                             <div className="bar1"></div>

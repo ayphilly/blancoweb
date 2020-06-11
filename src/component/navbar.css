@@ -69,6 +69,18 @@
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+/*cart*/
+.cart-buy {
+  position: relative;
+}
+.cart-buy .amount {
+  color: #000;
+  font-size: 12px;
+  left: 35%;
+  font-weight: bold;    
+  position: absolute;
+  top: 30%;
+}
 
   
   /*NavBar*/
@@ -93,6 +105,8 @@
     margin-top: 10px;
     text-decoration: none;
     list-style-type: none;
+    align-items: center;
+    justify-content: center;
   }
   
   .navul li a {
@@ -100,7 +114,8 @@
     margin-right: 25px;
     color : white;
     font-size: 15px; 
-    font-weight: bold;  
+    font-weight: bold; 
+    transition: opacity 0.5s ease; 
   }
   
   .navul li a:hover {
@@ -108,9 +123,8 @@
     color : white;    
     font-size: 15px;
     opacity: 0.6;
- 
-    transition: 0.5s ease;
   }
+
   #drop {
     color: #fff;
   }
