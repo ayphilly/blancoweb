@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800;900&display=swap');
 .log {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;    
     align-content: center;
     align-items: center;
     justify-content: center;
+    
 }
 .form-form {
     
@@ -98,7 +99,7 @@ input:focus{
 
 .signin-link a {
     font-family: 'Montserrat';
-    font-weight: 100;
+    font-weight: 300;
     font-size: 15px;
     color: #000;
     text-decoration-color: #000;
@@ -119,7 +120,7 @@ input:focus{
 
 .signin-link .linkk {
     font-family: 'Montserrat';
-    font-weight: 100;
+    font-weight: 300;
     font-size: 15px;
     color: #000;
     text-decoration-color: #000;

@@ -5,7 +5,7 @@ import './navbar.css';
 import brand from '../svg/blancow.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WOW from 'wow.js' ;
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export class Navbar extends Component {
     state = {
@@ -22,7 +22,7 @@ export class Navbar extends Component {
             ele.addEventListener('click',function (){
             ele.classList.toggle('change');
         })
-
+        
         
     }
     cartCounter = ()=> {
@@ -56,6 +56,19 @@ export class Navbar extends Component {
         
     }
     
+    navFunc = () => {
+       
+        var main = document.getElementById('navul');
+        var ele = main.getElementsByClassName('error-link');
+        for (var i =0; i<ele.length; i++) {
+            ele[i].addEventListener("click", function() {
+                var mai = document.getElementById('error-li');
+                var current = document.getElementsByClassName("acti");
+                current[0].className = current[0].className.replace(" acti", "");
+                this.className += " acti";
+            });
+        }
+    }
     
     render () {
           const myIcon = this.state.icon;      
@@ -67,27 +80,44 @@ export class Navbar extends Component {
                             <img src={brand} className="App-brand" alt="Brand"/>
                         </div>
                         
-                        <ul className='navul'>
-                            <li> 
-                                <Link className="error-link" to="/" style={{textDecoration:'none'}}>
+                        <ul className='navul' id="navul">
+                            <li > 
+                                <NavLink
+                                    exact to="/"
+                                    className="error-link"
+                                    activeClassName="acti"
                                     
+                                >
                                     Home
-                                </Link>
+                                </NavLink>
+                                
                             </li>
-                            <li>
-                                <Link className="error-link" to="/about" style={{textDecoration:'none'}}>
-                                    
+                            <li >
+                                <NavLink
+                                    to="/about"
+                                    className="error-link"
+                                    activeClassName="acti" 
+                                >
                                     About Us
-                                </Link>
+                                </NavLink>                                
                             </li>
                             <li>
-                                <Link className="error-link" to="/signin" style={{textDecoration:'none'}}>
-                                   
-                                    Sign-In
-                                </Link>
+                                <NavLink
+                                    to="/signin"
+                                    className="error-link"
+                                    activeClassName="acti"
+                                >
+                                    Sign-in
+                                </NavLink>                                 
                             </li>
                             <li> 
-                                <Link onMouseOver={this.myfunction} className="error-link" to="/shop" style={{textDecoration:'none'}}>Shop <span className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span>  </Link>
+                                <NavLink
+                                    to="/shop"
+                                    className="error-link"
+                                    activeClassName="acti"
+                                >
+                                    Shop <span onMouseOver={this.myfunction} className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span>
+                                </NavLink>                                
                                 <ul className="dropdownNav" id="dropy">
                                     <li> <a href="#"> T-Sirts </a></li>
                                     <li> <a href="#"> Hoodie </a></li>
@@ -96,7 +126,7 @@ export class Navbar extends Component {
                             </li>
                             <li className="cart-buy" onClick={this.cartCounter}>
                                 <FontAwesomeIcon icon={['fas', 'shopping-bag'] } style={{ color: 'white', height:30, width:30}} size="2.5x"  />
-                                <strong class="amount">{this.state.counter}</strong>
+                                <strong className="amount">{this.state.counter}</strong>
                             </li>
 
                         </ul>

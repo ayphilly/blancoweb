@@ -67,17 +67,18 @@ export default class Shop extends Component {
                 </div>
                 <div className="shop-product">
                     <div className="select">
-                        <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>                            
+                        <select name="colors" id="colors">
+                        <option value="volvo">Color</option>
+                            <option value="Red">Red</option>
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                            <option value="pink">Pink</option>                            
                         </select>
 
-                        <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
+                        <select name="sortby" id="sortby">
+                            <option value="price">price</option>
+                            <option value="hl">highest-lowest</option>
+                            <option value="lh">lowest-highest</option>
                             <option value="audi">Audi</option>
                         </select>
 

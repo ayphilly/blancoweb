@@ -68,7 +68,7 @@ class App extends Component {
                     <div className="classy">
                         <Navbar/>
                         <Switch>
-                            <Route path="/" component={Body} exact />
+                            <Route exact path="/" component={Body}  />
                             <Route path="/policy" component={Policy} /> 
                             <Route path="/shop" component={Shop} />                        
                             <Route path="/signin" component={SignIn} />

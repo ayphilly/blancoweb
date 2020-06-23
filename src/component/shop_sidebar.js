@@ -23,25 +23,30 @@ class Sidebar extends React.Component {
             return <Preload/>
         }*/
         return (
-            <div className="shop-bar" >
-               <p>Sidebar</p>
-
+            <div className="shop-bar" >                           
                <div className="apparel">
                    <h4>Apparel</h4>
                    <ul>
                        <li>Jackets</li>
                        <li onClick={this.mtoggle}>
-                         <span className="dropwicon">Roundies<FontAwesomeIcon icon={['fas', 'angle-down'] } style={{ color: 'black', marginTop:'5', marginLeft:'5'}} /></span>
+                         <span className="dropwicon">Sweaties<FontAwesomeIcon icon={['fas', 'angle-down'] } style={{ color: 'black', marginTop:'5', marginLeft:'5'}} /></span>
                         
                         <ul className="apadrop" data-wow-offset="30" id="amadrop">
-                            <li>Jackets</li>
-                            <li>Roundies</li>
                             <li>Hoodies</li>
+                            <li>Sweaties</li>
+                            <li>Crewies</li>
                             <li>Bottoms</li>
                         </ul>
                        </li>
-                       <li>Hoodies</li>
+                       <li>Roundies</li>
                        <li>Bottoms</li>
+                   </ul>
+               </div>
+               <div className="apparel">
+                   <h4>Headwears</h4>
+                   <ul>
+                       <li>Hats</li>                       
+                       <li>Buckets</li>                       
                    </ul>
                </div>
             </div>

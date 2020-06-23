@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
 .shopy{
   height: 100vh;
   display:flex;
@@ -90,7 +91,7 @@
 
 .apparel {
   width: 10vh;
-  height: 30vh;
+  height: auto;
   
 }
 .apparel  ul {
@@ -98,8 +99,18 @@
   text-decoration: none;
 }
 
+.apparel h4 {
+  font-family: 'montserrat';
+  font-size: 20px;
+  font-weight: 800;
+}
+
 .apparel  ul li {
   cursor: pointer;
+  font-family: 'montserrat';
+  font-size: 15px;
+  font-weight: 300;
+  
 }
 
 .dropwicon{
@@ -107,7 +118,8 @@
   flex-direction: row;
 }
 .apadrop {
-  display: none;
+  display: none;  
+  margin-left:-10px;
 }
 .dropactive {
   display: block;
