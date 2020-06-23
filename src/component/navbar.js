@@ -11,6 +11,7 @@ export class Navbar extends Component {
     state = {
         disp : true,
         icon : 'angle-down' ,
+        counter : 0
               
     } 
     componentDidMount (){
@@ -24,7 +25,13 @@ export class Navbar extends Component {
 
         
     }
-    
+    cartCounter = ()=> {
+        
+        this.setState({
+            counter: this.state.counter +1
+        })
+        console.log(this.state.counter)
+    }
     myfunction =  (e) => {
         e.preventDefault();
         
@@ -87,9 +94,9 @@ export class Navbar extends Component {
                                     <li> <a href="#"> Caps </a></li>
                                 </ul>
                             </li>
-                            <li className="cart-buy">
-                                <FontAwesomeIcon icon={['fas', 'shopping-bag'] } style={{ color: 'white', height:30, width:30}} size="2.5x" />
-                                <strong class="amount">0</strong>
+                            <li className="cart-buy" onClick={this.cartCounter}>
+                                <FontAwesomeIcon icon={['fas', 'shopping-bag'] } style={{ color: 'white', height:30, width:30}} size="2.5x"  />
+                                <strong class="amount">{this.state.counter}</strong>
                             </li>
 
                         </ul>

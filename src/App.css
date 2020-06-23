@@ -169,7 +169,7 @@
   background-color: #fff;
   width: 100%;
   text-align: center;
- 
+  height:20vh;
 
 }
 .lil-about-main {
@@ -191,21 +191,7 @@
   color: #000;
 }
 
-.lil-about-btn {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  height: 7vh;
 
-}
-.lil-about-btn button {
-  font-family: "Poppins","HelveticaNeue","Helvetica Neue",sans-serif;
-  text-transform: uppercase;
-  font-size: 1vw;
-  font-weight: bold;
-  
-  
-}
 
 
 
@@ -321,6 +307,13 @@
 /*Media Responsive*/
 @media screen and (min-width : 320px)
 and (max-width : 900px) {
+
+  .lil-about-text p {
+    font-family: "Autograf PERSONAL USE ONLY";   
+    font-size: 30px;
+    color: #000;
+  }
+  
 
   .carousel-wordr h5 {
     color: #fff;

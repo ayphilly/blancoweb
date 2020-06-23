@@ -4,6 +4,7 @@ import './App.css';
 import {Preload} from './component/Preload'
 import {Body} from './pages/body'
 import Shop from './pages/shop'
+import {Policy} from './pages/policy'
 import {Navbar} from './component/navbar'
 //import {Slider} from './slider'
 import {SignIn} from './pages/sign-in'
@@ -48,7 +49,9 @@ class App extends Component {
         clearTimeout();
     }
 
-    
+    cartCounter = (counter)=> {
+        this.counter++
+    }
     render () {
         if (this.state.loader === '') {
             return (
@@ -66,6 +69,7 @@ class App extends Component {
                         <Navbar/>
                         <Switch>
                             <Route path="/" component={Body} exact />
+                            <Route path="/policy" component={Policy} /> 
                             <Route path="/shop" component={Shop} />                        
                             <Route path="/signin" component={SignIn} />
                             <Route path="/register" component={Register} />
