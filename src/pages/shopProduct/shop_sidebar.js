@@ -1,5 +1,5 @@
 import React  from 'react';
-import '../pages/shop.css';
+import './shop.css';
 //import {Preload} from './Preload';
 import WOW from 'wow.js' 
 //import { Link } from 'react-router-dom';

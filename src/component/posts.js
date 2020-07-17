@@ -1,5 +1,5 @@
 import React  from 'react';
-import '../pages/shop.css';
+import '../pages/shopProduct/shop.css';
 //import {Preload} from './Preload';
 
 class Posts extends React.Component {

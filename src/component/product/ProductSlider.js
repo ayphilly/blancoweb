@@ -2,9 +2,9 @@
 import React , {Component} from 'react'
 import './product.css'
 import {Product} from './Product'
-import Product1 from '../pictures/1.png'
-import Product2 from '../pictures/2.png'
-import Product3 from '../pictures/7.png'
+import Product1 from '../../pictures/1.png'
+import Product2 from '../../pictures/2.png'
+import Product3 from '../../pictures/7.png'
 import OwlCarousel from 'react-owl-carousel';  
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css';  
@@ -118,8 +118,8 @@ export class ProductSlider extends Component {
                     <div className="pr-text">
                             <h3>NEW PRODUCTS</h3>
                     </div>
-                    <div className='container-fluid ' id="slider-d" >            
-                        <OwlCarousel items={4}  
+                    <div className='container ' id="slider-d" >            
+                        <OwlCarousel items={this.state.boxone.length}  
                         className="owl-theme"  
                         id="owl-theme"
                         {...this.state.options}

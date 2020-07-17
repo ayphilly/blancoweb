@@ -1,6 +1,6 @@
 import React , {Component} from 'react'
 
-import {PictureSlider} from '../pictureslider'
+import {PictureSlider} from '../../component/pictureslider'
 import './shop_product.css'
 
 export class ShopProduct extends Component {

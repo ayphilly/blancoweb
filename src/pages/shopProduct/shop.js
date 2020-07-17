@@ -2,8 +2,8 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
-import Posts from '../component/posts'
-import Sidebar from '../component/shop_sidebar'
+import Posts from '../../component/posts'
+import Sidebar from './shop_sidebar'
 import './shop.css'
 
 export default class Shop extends Component {

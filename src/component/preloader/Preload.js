@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
-import '../App.css';
-import brand from '../svg/blanco.svg';
+import '../../App.css';
+import brand from '../../svg/blanco.svg';
 import WOW from 'wow.js';
 
 export class Preload extends Component {

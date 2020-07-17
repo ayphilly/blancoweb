@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Register} from '../component/register';
-import {Login} from '../component/login';
+import {Register} from '../../component/login/register';
+import {Login} from '../../component/login/login';
 import './sign-in.css'
 export class SignIn extends Component {
     

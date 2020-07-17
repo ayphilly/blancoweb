@@ -3,13 +3,13 @@ import React, {Component} from 'react';
 import '../App.css';
 
 import {ScrollTop} from '../component/scrolltop'
-import {Newsletter} from '../component/newsletter'
+import {Newsletter} from '../component/newsletter/newsletter'
 
 import {Slider} from '../component/slider'
 import {About} from './about'
 
-import {ProductSlider} from './ProductSlider'
-import {Collection} from '../component/collection'
+import {ProductSlider} from '../component/product/ProductSlider'
+import {Collection} from '../component/collection/collection'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';

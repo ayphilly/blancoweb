@@ -1,20 +1,27 @@
 import React, {Component} from 'react';
 import {Route, Switch } from 'react-router-dom';
 import './App.css';
-import {Preload} from './component/Preload'
+import {Preload} from './component/preloader/Preload'
 import {Body} from './pages/body'
-import Shop from './pages/shop'
+
+//shop
+import Shop from './pages/shopProduct/shop'
+import {ShopProduct} from './pages/shopProduct/shop_product'
+//policy
 import {Policy} from './pages/policy'
-import {Navbar} from './component/navbar'
+//navbar
+import {Navbar} from './component/navbar/navbar'
 //import {Slider} from './slider'
-import {SignIn} from './pages/sign-in'
+
+//user
+import {SignIn} from './pages/sign-in/sign-in'
 import {Error} from './pages/Error.js'
-import {Register} from './component/register.js'
-import {Login} from './component/login.js'
+import {Register} from './component/login/register.js'
+import {Login} from './component/login/login.js'
 //import {ProductSlider} from './ProductSlider'
 //import {Collection} from './collection'
-import {ShopProduct} from './component/shop_product'
-import {Footer} from './component/footer'
+
+import {Footer} from './component/footer/footer'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';

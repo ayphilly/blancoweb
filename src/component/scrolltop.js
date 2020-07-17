@@ -15,16 +15,16 @@ export class ScrollTop extends React.Component {
     }
 
     toggleVisibility() {
-        if (window.pageYOffset > 300) {
-          this.setState({
-            is_visible: true
-          });
-        } else {
-          this.setState({
-            is_visible: false
-          });
-        }
+      if (window.pageYOffset > 300) {
+        this.setState({
+          is_visible: true
+        });
+      } else {
+        this.setState({
+          is_visible: false
+        });
       }
+    }
 
     scrollTop = () => {
         window.scrollTo({

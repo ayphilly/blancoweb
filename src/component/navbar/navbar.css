@@ -41,7 +41,9 @@
     
   }
 
-  
+  .bar-svg{
+    display: none;
+  }
 #barIcon {
   display: inline-block;
   cursor: pointer;
@@ -134,8 +136,8 @@
   #dropy {
     position: absolute;
     z-index: 999;
-    margin: auto;  
-    right: 25px;
+    margin: auto;
+    
     margin-top:5px;
     margin-right:10px;
     display: none;
@@ -148,10 +150,11 @@
     list-style-type: none;
     
   }
-  
+   
   .dropdownNav li a {
+    
     text-decoration: none;
-    margin-right: 25px;
+    
     color : white;
     font-size: 15px; 
     font-weight: bold;  

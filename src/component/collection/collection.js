@@ -1,10 +1,10 @@
 import React , {Component} from 'react'
 import './collection.css'
 import {Collectionlist} from './collectionlist'
-import Product1 from '../pictures/pr-1.jpg'
-import Product2 from '../pictures/pr-2.jpg'
-import Product3 from '../pictures/pr-3.jpg'
-import Product4 from '../pictures/pr-4.jpg'
+import Product1 from '../../pictures/pr-1.jpg'
+import Product2 from '../../pictures/pr-2.jpg'
+import Product3 from '../../pictures/pr-3.jpg'
+import Product4 from '../../pictures/pr-4.jpg'
 //import Product3 from './pictures/7.png'
 
 export class Collection extends Component {
