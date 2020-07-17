@@ -31,7 +31,7 @@ class Sidebar extends React.Component {
                        <li onClick={this.mtoggle}>
                          <span className="dropwicon">Sweaties<FontAwesomeIcon icon={['fas', 'angle-down'] } style={{ color: 'black', marginTop:'5', marginLeft:'5'}} /></span>
                         
-                        <ul className="apadrop" data-wow-offset="30" id="amadrop">
+                        <ul className="apparel_drop" data-wow-offset="30" id="amadrop">
                             <li>Hoodies</li>
                             <li>Sweaties</li>
                             <li>Crewies</li>
