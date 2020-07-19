@@ -31,8 +31,8 @@ export class Slider extends Component {
                     <div className="carousel-item active">
                         <img className="d-block w-100" src={Slider0} alt="First slide"/>
                         <div className="carousel-wordr">
-                                <h5>weweweewe</h5>
-                                <p>wwewewewew</p>
+                                <h5>Merch</h5>
+                                <p>well crafted merchandise</p>
                                 <div className="slider-icon">
                                     <FontAwesomeIcon icon={['fas', 'angle-double-down'] }  size="3x" />
                                 </div>
@@ -43,8 +43,8 @@ export class Slider extends Component {
                     <div className="carousel-item ">
                         <img className="d-block w-100" src={Slider1} alt="Second slide"/>
                         <div className="carousel-word">
-                                <h5>weweweewe</h5>
-                                <p>wwewewewew</p>
+                                <h5>Merch</h5>
+                                <p>well crafted merchandise</p>
                                 <div className="slider-icon">
                                     <FontAwesomeIcon icon={['fas', 'angle-double-down'] }  size="3x" />
                                 </div>
@@ -54,8 +54,8 @@ export class Slider extends Component {
                     <div className="carousel-item">
                         <img className="d-block w-100" src={Slider2} alt="Third slide"/>
                         <div className="carousel-wordr">
-                                <h5>weweweewe</h5>
-                                <p>wwewewewew</p>
+                                <h5>Merch</h5>
+                                <p>well crafted merchandise</p>
                                 <div className="slider-icon">
                                     <FontAwesomeIcon icon={['fas', 'angle-double-down'] }  size="3x" />
                                 </div>

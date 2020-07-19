@@ -65,14 +65,19 @@ flex-direction: column;
 text-align: center;
 align-items: center;
 justify-content: center;
+overflow:hidden;
 }
 
 .clist-ima img{  
-width: 250px;  
+width: 250px;
+transform-origin: 50% 50%;
+transition: transform 1s, filter .5s ease-out;
+
 }
-.clist-ima img:hover{  
+.clist-ima:hover img{  
 opacity: .7; 
 cursor: pointer;
+transform: scale(1.3);
 }
 .clist-text {
     position: absolute;  

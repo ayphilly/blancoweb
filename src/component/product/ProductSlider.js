@@ -9,8 +9,6 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css';  
 
-
-
 export class ProductSlider extends Component {
 
     state = {
@@ -81,7 +79,7 @@ export class ProductSlider extends Component {
         ],
         options: {
             loop: true,
-            margin: 10,            
+            margin: 0,            
             responsive:{
                 0: {
                     items: 1,
@@ -112,13 +110,13 @@ export class ProductSlider extends Component {
     render () {
       
         return (
-            <div >
+            <div>
                
-                <div className="neww">
+                <div className="neww container">
                     <div className="pr-text">
                             <h3>NEW PRODUCTS</h3>
                     </div>
-                    <div className='container-fluid' id="slider-d" >            
+                    <div className='container' id="slider-d" >            
                         <OwlCarousel items={this.state.boxone.length}  
                         className="owl-theme"  
                         id="owl-theme"

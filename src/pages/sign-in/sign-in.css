@@ -9,8 +9,8 @@
 }
 #page {
     margin : 0 auto;
-    margin-top: 40px;
-    height: 100vh;  
+    
+    height: fit-content;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,9 +18,8 @@
 }
 
 #page1 {
-    margin : 0 auto;
-    margin-top: 40px;
-    height: 100vh;   
+    margin : 0 auto;    
+    height: fit-content;   
     display: flex;
     align-items: center;
 

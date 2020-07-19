@@ -35,7 +35,7 @@
     margin-bottom: 80px;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    
   }
  
   .neww {
@@ -96,6 +96,15 @@
   }
   .item-imaqe{  
     width: 320px;
+    overflow:hidden;
+  }
+  .item-imaqe img {
+    transform-origin: 50% 40%;
+  transition: transform 1s, filter .5s ease-out;
+  }
+  .item-imaqe img:hover {
+    cursor: pointer;
+    transform: scale(2.5);
   }
   .item-text {
     display: flex;
@@ -107,12 +116,12 @@
   
   .item-text h4 {
     margin: 0 0 12.5px;
-      font-family: "Montserrat",sans-serif;
-      font-weight: 600;
-      line-height: 1.2;
-      overflow-wrap: break-word;
-      word-wrap: break-word; 
-      color: #000;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #000;
     
   }
   .item-text p {
@@ -183,7 +192,7 @@
   }
 
   .item-a { 
-    max-width: 100%;
+    width: 100%;
   }
 
   
