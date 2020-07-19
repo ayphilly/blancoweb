@@ -32,13 +32,11 @@
     float: left;
     margin: auto;
     margin-top: 17px;
-    margin-left: 10px;
-    
+    margin-left: 10px;    
   }
   
   .App-brand {  
-    height: 30px;
-    
+    height: 30px;    
   }
 
   .bar-svg{
@@ -109,22 +107,28 @@
     list-style-type: none;
     align-items: center;
     justify-content: center;
+    
+    
   }
   .navul li a {
+    color: #fff;
     text-decoration: none;
-    margin-right: 25px;
-    
+    margin-right: 25px;    
     font-size: 15px; 
     font-weight: bold; 
     transition: opacity 0.5s ease; 
+  }
+
+  .navul li a:hover {
+    opacity:0.5;
   }
   
   
   
   .acti {
-    background-color: #fff;
-    width: 100px;
-    height: 30px;
+    opacity: 0.5;
+    width: 150px;
+    height: 60px;
     padding: 0px;
     color : #000;     
     font-size: 15px; 

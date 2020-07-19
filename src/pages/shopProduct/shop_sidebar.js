@@ -9,12 +9,27 @@ class Sidebar extends React.Component {
 
     componentDidMount = () =>  {
         const wow = new WOW();
-        wow.init();        
+        wow.init();  
+        this.accordion();      
     }
 
-    mtoggle = () => {
-        var touch = document.getElementById('amadrop')
-        touch.classList.toggle("dropactive");
+    accordion = () => {
+        
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i=0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("activ");
+                var panel = this.nextElementSibling;
+               
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                }else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            })
+        }
         
     }
     render () {
@@ -28,17 +43,29 @@ class Sidebar extends React.Component {
                    <h4>Apparel</h4>
                    <ul>
                        <li>Jackets</li>
-                       <li onClick={this.mtoggle}>
-                         <span className="dropwicon">Sweaties<FontAwesomeIcon icon={['fas', 'angle-down'] } style={{ color: 'black', marginTop:'5', marginLeft:'5'}} /></span>
-                        
-                        <ul className="apparel_drop" data-wow-offset="30" id="amadrop">
+                       <li className="accordion">
+                            <span className="dropwicon">
+                                Sweaties
+                                <FontAwesomeIcon icon={['fas', 'angle-down'] } style={{ color: 'black', marginTop:'5', marginLeft:'5'}} />
+                            </span>                        
+                       </li>
+                       <ul className="apparel_drop" id="amadrop">
                             <li>Hoodies</li>
                             <li>Sweaties</li>
                             <li>Crewies</li>
                             <li>Bottoms</li>
                         </ul>
+                       <li className="accordion">
+                            <span className="dropwicon">
+                                Roundies
+                                <FontAwesomeIcon icon={['fas', 'angle-down'] } style={{ color: 'black', marginTop:'5', marginLeft:'5'}} />
+                            </span>
                        </li>
-                       <li>Roundies</li>
+                       <ul className="apparel_drop">
+                            <li>Shorties</li>
+                            <li>Longies</li>
+                            <li>Crewies</li>                            
+                        </ul>
                        <li>Bottoms</li>
                    </ul>
                </div>

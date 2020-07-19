@@ -90,7 +90,7 @@ export class ProductSlider extends Component {
                     items: 2,
                 },
                 1000: {
-                    items: 5,
+                    items: 4,
                 },
             },
         },
@@ -118,7 +118,7 @@ export class ProductSlider extends Component {
                     <div className="pr-text">
                             <h3>NEW PRODUCTS</h3>
                     </div>
-                    <div className='container ' id="slider-d" >            
+                    <div className='container-fluid' id="slider-d" >            
                         <OwlCarousel items={this.state.boxone.length}  
                         className="owl-theme"  
                         id="owl-theme"

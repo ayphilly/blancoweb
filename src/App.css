@@ -4,7 +4,7 @@
 @import url('https://db.onlinewebfonts.com/c/8e97f88029e50c58d9f0deef4c821a35?family=Autograf+PERSONAL+USE+ONLY');
 .App {
   width: max-width;
-  height: 100%;
+  height: fit-content;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
 
 .classy{
   position: relative;
-  min-height: 200vh;
+ height: fit-content;
   width: max-width;
   font-family:'Montserrat',serif;
  
@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;   
   position: relative; 
-  min-height: 100vh;
+ height: fit-content;
 }
 
 .preload-container {

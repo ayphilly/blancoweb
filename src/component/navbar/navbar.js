@@ -44,6 +44,7 @@ export class Navbar extends Component {
         })
         
     }
+
     cartCounter = ()=> {
         
         this.setState({
@@ -51,6 +52,7 @@ export class Navbar extends Component {
         })
         console.log(this.state.counter)
     }
+    
     myfunction =  (e) => {
         e.preventDefault();
         
@@ -104,7 +106,7 @@ export class Navbar extends Component {
                             <li > 
                                 <NavLink
                                     exact to="/"
-                                    className="error-link"
+                                    
                                     activeClassName="acti"
                                     
                                 >
@@ -115,7 +117,7 @@ export class Navbar extends Component {
                             <li >
                                 <NavLink
                                     to="/about"
-                                    className="error-link"
+                                    
                                     activeClassName="acti" 
                                 >
                                     About Us
@@ -124,7 +126,7 @@ export class Navbar extends Component {
                             <li>
                                 <NavLink
                                     to="/signin"
-                                    className="error-link"
+                                    
                                     activeClassName="acti"
                                 >
                                     Sign-in
@@ -133,7 +135,7 @@ export class Navbar extends Component {
                             <li> 
                                 <NavLink
                                     to="/shop"
-                                    className="error-link"
+                                    
                                     activeClassName="acti"
                                 >
                                     Shop <span onMouseOver={this.myfunction} className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span>
