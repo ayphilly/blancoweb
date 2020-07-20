@@ -7,6 +7,8 @@ import {Body} from './pages/body'
 //shop
 import Shop from './pages/shopProduct/shop'
 import {ShopProduct} from './pages/shopProduct/shop_product'
+
+import {Cart} from './pages/cart/cart'
 //policy
 import {Policy} from './pages/policy'
 //navbar
@@ -81,7 +83,8 @@ class App extends Component {
                             <Route path="/signin" component={SignIn} />
                             <Route path="/register" component={Register} />
                             <Route path="/login" component={Login} />
-                            <Route path="/shop/:productid" component={ShopProduct} />
+                            <Route path="/shopy" component={ShopProduct} />
+                            <Route path="/cart" component={Cart} />
                             <Route component={Error} />
                         </Switch>
                         <Footer/>

@@ -69,10 +69,12 @@ overflow:hidden;
 }
 
 .clist-ima img{  
-width: 250px;
-transform-origin: 50% 50%;
-transition: transform 1s, filter .5s ease-out;
-
+  width: 250px;
+  transform-origin: 50% 50%;
+  -webkit-transition: transform 1s, filter .5s ease-out;
+  -moz-transition: transform 1s, filter .5s ease-out ;
+  -o-transition: transform 1s, filter .5s ease-out;
+  transition: transform 1s, filter .5s ease-out;
 }
 .clist-ima:hover img{  
 opacity: .7; 

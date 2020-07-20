@@ -64,14 +64,20 @@
     line-height: 1.2;
     overflow-wrap: break-word;
     word-wrap: break-word; 
-    box-shadow: 3px 0px 5px 0px #e7e6e6;
-    transition: 0.3s;
+    box-shadow: 3px 0px 5px 0px #e7e6e6;    
     border: none;
     border-radius: 5px;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in ;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
   }
   .prod-btn:hover {
-    opacity:1;
-    color:#fff;
+    background-color: white;
+    color: #000;
+    font-weight: 800;
+    border: 3px solid #000;
+    
   }
   
   
@@ -99,8 +105,11 @@
     overflow:hidden;
   }
   .item-imaqe img {
-    transform-origin: 50% 40%;
-  transition: transform 1s, filter .5s ease-out;
+    transform-origin: 50% 40%; 
+    -webkit-transition: transform 1s, filter .5s ease-out;
+    -moz-transition: transform 1s, filter .5s ease-out ;
+    -o-transition: transform 1s, filter .5s ease-out;
+    transition: transform 1s, filter .5s ease-out;
   }
   .item-imaqe img:hover {
     cursor: pointer;

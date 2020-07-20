@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+
+.cart {
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.cart-object {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:fit-content;
+    align-items: center;
+    
+}
+.cart-image {
+    display: flex;    
+}
+.cart-image img {
+    width: 140px;
+    height: 105px;
+}
+.cart-details p {
+    font-size: 15px;
+    font-weight: 700;
+}
+.cart-details .color {
+    margin-top: -20px;
+}
+.cart-table {
+    overflow-x:auto;
+    width: 100%;
+}
+.cart-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px dotted #000;
+    stroke-width: 10px;
+}
+
+tr td {
+    font-size: 15px;
+    font-weight: 900;
+
+}
+
+.cart-button {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    
+
+}
+.calculations {
+    width:100%;
+    margin-top: 30px;  
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-end;
+    justify-content: flex-start;   
+    
+}
+
+.calc-details {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.calc-details .details-sub {  
+    width: 300px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.details-sub p:nth-child(odd) {    
+    font-size: 15px;
+    font-weight: 800;
+    float: left;
+}
+
+
+.calc-details .details-gr {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.details-gr p:nth-child(odd) {
+    font-size: 15px;
+    font-weight: 800;
+    margin-right: 50px;
+}
+
+
+
+.cart-button .button-cout {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    text-align: center;  
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 10px;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in ;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.button-cout:hover {
+    background-color: white;
+    color: #000;
+    font-weight: 800;
+    border: 3px solid #000;
+}
+.cart-button .button-cs {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    text-align: center;  
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 10px;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in ;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.button-cs:hover {
+    background-color: white;
+    color: #000;
+    font-weight: 800;
+    border: 3px solid #000;
+}
