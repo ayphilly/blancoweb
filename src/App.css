@@ -306,7 +306,7 @@
 
 /*Media Responsive*/
 @media screen and (min-width : 320px)
-and (max-width : 900px) {
+and (max-width : 600px) {
 
   .lil-about-text p {
     font-family: "Autograf PERSONAL USE ONLY";   
@@ -315,24 +315,13 @@ and (max-width : 900px) {
   }
   
 
-  .carousel-wordr h5 {
-    color: #fff;
-    font-weight: bold;
-    font-size: 30px;
-    
-  }
   
-  .carousel-wordr p {
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: -10px;
-  }
   .carousel-wordr {
     position: absolute;
     top: 0%;
     right: 10%;
     display: flex;
+    text-align: center;
     flex-direction: column;  
     justify-content: center;
     align-content: center;
@@ -343,10 +332,25 @@ and (max-width : 900px) {
     top: 0%;
     left: 15%;
     display: flex;
+    text-align: center;
     flex-direction: column;  
     justify-content: center;
     align-content: center;
     align-items: center;
+  }
+  
+  .carousel-wordr h5 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    
+  }
+  
+  .carousel-wordr p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -10px;
   }
   
   .carousel-word h5 {
@@ -359,7 +363,7 @@ and (max-width : 900px) {
   .carousel-word p {
     color: #fff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: -20px;
   }
   
@@ -417,71 +421,135 @@ and (max-width : 900px) {
     margin-top:  -10px;
   }
 
-  .clist-container {
-    max-width: 80%;    
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 30px;
-    margin: 10px;    
-    
-  }
-  .clist-ima img{  
-    width: 210px;  
-  }
-  .footer-ins, .footer-fb, .footer-tw {
-    margin: 15px;
-    color: #989898;
-  
+ 
+
+}
+
+/*Media Responsive*/
+@media screen and (min-width : 600px)
+and (max-width : 900px) {
+
+  .lil-about-text p {
+    font-family: "Autograf PERSONAL USE ONLY";   
+    font-size: 30px;
+    color: #000;
   }
   
-  .footer-copy {
+
+  
+  .carousel-wordr {
+    position: absolute;
+    top: 10%;
+    right: 10%;
     display: flex;
-    flex-direction: row;     
-    align-items: center;
-    margin-top: 18px;
-    
-  }
-  .footer-copy p{
     text-align: center;
-    font-size: 13px;
-    font-family: "Poppins","HelveticaNeue","Helvetica Neue",sans-serif;
-    color: #989898;
-    margin-left: 40px;
+    flex-direction: column;  
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .carousel-word {
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   
-.footer-links ul li{
-  font-size: 15px;
-  text-decoration: none;  
-  list-style: none;
-  margin: 5px;
-}
+  .carousel-wordr h5 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    
+  }
+  
+  .carousel-wordr p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -10px;
+  }
+  
+  .carousel-word h5 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    
+  }
+  
+  .carousel-word p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  
 
-.footer-links ul li a{
-  text-decoration: none;
-  list-style-type: none;
-  text-decoration-style: none;
-  color: #989898;
-  text-align: center;
-}
-
-}
-
-@media screen and (min-width : 1000px)
-and (min-width : 1024px){
-  .clist-container {
-    max-width: 80%;    
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 30px;
-    margin: 0 auto;
+  .item-container {
+    margin-left: 20px;
+  }
+  
+  .item-product {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
     align-content: center;
     align-items: center;
     justify-content: center;
     
+  
+  }
+  #item-product-cont {
+    display: flex;
+    flex-direction: row; 
     
   }
-  .clist-ima img{  
-    width: 250px;  
+
+  .item-imaqe{  
+    width: 320px;
+    justify-content: center;
   }
+  .item-text {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+  }
+
+  #carousel-inner {
+    display: flex;
+    flex-direction: column;  
+    
+  }
+
+  .item-text .price {
+    
+    margin: 0 0 18px;
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #3d4246;
+    /*color: blue;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top:  -10px;
+  }
+
+  .clist-ima img{  
+    width: 210px;  
+  }
+  
+}
+
+@media screen and (min-width : 1000px)
+and (min-width : 1024px){
+ 
 
 }

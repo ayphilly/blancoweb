@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WOW from 'wow.js' ;
 import { Link, NavLink } from 'react-router-dom';
 import { TimelineMax, Power2 } from "gsap";
-
+import {navFunc, barCont} from '../../helper';
 
 export class Navbar extends Component {
     state = {
@@ -17,31 +17,8 @@ export class Navbar extends Component {
     } 
     componentDidMount (){
         const wow = new WOW();
-        wow.init();
-        
-        // var ele = document.getElementById('barIcon');
-        //     ele.addEventListener('click',function (){
-        //     ele.classList.toggle('change');
-        // })
-
-        const hamburger = document.querySelector('.hamburger');
-        const lineOne = hamburger.querySelector('.l-one');
-        const lineTwo = hamburger.querySelector('.l-two');
-        const lineThree = hamburger.querySelector('.l-three');
-
-        const tlm = new TimelineMax({paused:true, reversed:true});
-
-        tlm
-         .to(lineTwo,.125, {scaleX:0, ease: Power2.easeInOut})
-         .to(lineOne, .5, {y:8, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "slide")
-         .to(lineThree, .5, {y:-8, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "slide")
-         .to(hamburger,.25, {rotation:360, ease:Power2.easeInOut} )
-         .to(lineOne, .25, {rotation:45, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross")
-         .to(lineThree, .25, {rotation:-45, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross");
-        
-        hamburger.addEventListener('click', _=>{
-            tlm.reversed()? tlm.play() :tlm.reverse();
-        })
+        wow.init();  
+        barCont();
         
     }
 
@@ -77,27 +54,12 @@ export class Navbar extends Component {
         
     }
 
-        
-    navFunc = () => {
-       
-        var main = document.getElementById('navul');
-        var ele = main.getElementsByClassName('error-link');
-        for (var i =0; i<ele.length; i++) {
-            ele[i].addEventListener("click", function() {
-                var mai = document.getElementById('error-li');
-                var current = document.getElementsByClassName("acti");
-                current[0].className = current[0].className.replace(" acti", "");
-                this.className += " acti";
-            });
-        }
-    }
-    
     render () {
           const myIcon = this.state.icon;      
         return (
             <div className="newNav">
                 <header>
-                    <div className='mainnav'>
+                    <div className='mainnav' id="myTopnav">
                         <div className="brand">
                             <img src={brand} className="App-brand" alt="Brand"/>
                         </div>
@@ -105,10 +67,8 @@ export class Navbar extends Component {
                         <ul className='navul' id="navul">
                             <li > 
                                 <NavLink
-                                    exact to="/"
-                                    
-                                    activeClassName="acti"
-                                    
+                                    exact to="/"                                    
+                                    activeClassName="acti"                                    
                                 >
                                     Home
                                 </NavLink>
@@ -116,8 +76,7 @@ export class Navbar extends Component {
                             </li>
                             <li >
                                 <NavLink
-                                    to="/about"
-                                    
+                                    to="/about"                                    
                                     activeClassName="acti" 
                                 >
                                     About Us
@@ -125,8 +84,7 @@ export class Navbar extends Component {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/signin"
-                                    
+                                    to="/signin"                                    
                                     activeClassName="acti"
                                 >
                                     Sign-in
@@ -134,8 +92,7 @@ export class Navbar extends Component {
                             </li>
                             <li> 
                                 <NavLink
-                                    to="/shop"
-                                    
+                                    to="/shop"                                    
                                     activeClassName="acti"
                                 >
                                     Shop <span onMouseOver={this.myfunction} className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span>
@@ -146,12 +103,14 @@ export class Navbar extends Component {
                                     <li> <a href="#"> Caps </a></li>
                                 </ul>
                             </li>
-                            <li className="cart-buy" onClick={this.cartCounter}>
-                                <FontAwesomeIcon icon={['fas', 'shopping-bag'] } style={{ color: 'white', height:30, width:30}} size="2x"  />
-                                <strong className="amount">{this.state.counter}</strong>
-                            </li>
+                            
 
                         </ul>
+                        
+                        <div className="cart-buy" onClick={this.cartCounter}>
+                            <FontAwesomeIcon icon={['fas', 'shopping-bag'] } style={{ color: 'white', height:30, width:30}} size="2x"  />
+                            <strong className="amount">{this.state.counter}</strong>
+                        </div>
                         <div className="bar-svg">
                             <svg className="hamburger" viewBox="0 0 100 100" width="50pt" xmlns="http://www.w3.org/2000/svg">            
                                 <line className="l-one" x1="25" y1="42" x2="75" y2="42" fill="none" stroke="#fff" strokeMiterlimit="10" strokeWidth="4"/>
@@ -160,14 +119,14 @@ export class Navbar extends Component {
                             </svg>
 
                         </div>
+                        
                         {/* <div id="barIcon" >
                             <div className="bar1"></div>
                             <div className="bar2"></div>
                             <div className="bar3"></div>
                         </div>                     */}
                     </div>
-                </header>
-                
+                </header>                
             </div>
         )
     }

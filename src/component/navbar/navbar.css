@@ -39,9 +39,7 @@
     height: 30px;    
   }
 
-  .bar-svg{
-    display: none;
-  }
+  
 #barIcon {
   display: inline-block;
   cursor: pointer;
@@ -72,6 +70,7 @@
 /*cart*/
 .cart-buy {
   position: relative;
+  margin-right: 10px;
 }
 .cart-buy .amount {
   color: #000;
@@ -95,6 +94,9 @@
     display: flex;
     flex-direction: row;
     background-color: black;  
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
   .navul  {
     display: flex;
@@ -164,21 +166,16 @@
     font-weight: bold;  
     transition: opacity 0.5s ease; 
   }
-
+  .mainnav .bar-svg {
+    display: none;
+  }
   
 /*Media Responsive*/
 @media screen and (min-width : 320px)
-and (max-width : 500px) {
-  .mainnav {
-    width: 100%;
-    height: 70px;
-    margin: auto;  
-    display: flex;
-    flex-direction: row;
-    background-color: black;  
-    justify-content: center;
-    align-items: center;
-
+and (max-width : 900px) {  
+  .mainnav .bar-svg {
+    display: block;
+    margin-right:10px;
   }
   .brand {
     float: left;
@@ -202,5 +199,28 @@ and (max-width : 500px) {
     margin-right: 20px;
   }
 
+}
+
+@media screen and (max-width: 900px) {
+  .navul.responsive li {position: relative;}
+  .navul.responsive {
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    flex-direction: column;     
+    top:50px;
+    right:0;
+    float:right;
+    margin-right: -0px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+    background-color: #000;
+    
+  }
+  
 }
 

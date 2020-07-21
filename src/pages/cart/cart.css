@@ -49,7 +49,7 @@ th, td {
 tr td {
     font-size: 15px;
     font-weight: 900;
-
+    text-align:left;
 }
 
 .cart-button {
@@ -87,6 +87,14 @@ tr td {
     float: left;
 }
 
+.details-sub p:nth-child(2) {    
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #000;
+    padding:5px;
+    color:#fff;
+}
+
 
 .calc-details .details-gr {    
     display: flex;
@@ -98,6 +106,14 @@ tr td {
     font-size: 15px;
     font-weight: 800;
     margin-right: 50px;
+}
+
+.details-gr p:nth-child(2) {    
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #000;
+    padding:5px;
+    color:#fff;
 }
 
 
@@ -142,4 +158,88 @@ tr td {
     color: #000;
     font-weight: 800;
     border: 3px solid #000;
+}
+
+
+/*Media Responsive*/
+@media screen and (min-width : 320px)
+and (max-width : 900px) {
+
+    .cart {
+        margin-top: 50px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+           
+        
+    }  
+
+    .calculations {
+        width:100%;
+        margin-top: 30px;  
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        justify-content: center;   
+        
+    }
+
+    .cart-details p {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 5.em;
+        text-overflow: clip;
+    }
+
+    .cart-button .button-cout {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        text-align: center;  
+        width: 300px;
+        height: 60px;
+        cursor: pointer;
+        margin-top: 10px;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in ;
+        -o-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+
+    
+    .button-cout:hover {
+        background-color: white;
+        color: #000;
+        font-weight: 800;
+        border: 3px solid #000;
+    }
+    .cart-button .button-cs {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        text-align: center;  
+        width: 300px;
+        height: 60px;
+        cursor: pointer;
+        margin-top: 10px;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in ;
+        -o-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+    .button-cs:hover {
+        background-color: white;
+        color: #000;
+        font-weight: 800;
+        border: 3px solid #000;
+    }
+
+    .cart-button {
+        margin-bottom: 200px;
+    }
+  
+
+
+
 }
