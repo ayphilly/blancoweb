@@ -21,6 +21,10 @@ export default class Shop extends Component {
             .handlePageClick
             .bind(this);
     }
+    
+    componentWillMount() {
+        this.receivedData();
+    }
     receivedData() {
         axios
             .get(`https://jsonplaceholder.typicode.com/photos`)
@@ -53,9 +57,7 @@ export default class Shop extends Component {
 
     };
 
-    componentDidMount() {
-        this.receivedData()
-    }
+    
     
         
    
@@ -105,6 +107,7 @@ export default class Shop extends Component {
                         containerClassName={"pagination"}
                         subContainerClassName={"pages pagination"}
                         activeClassName={"active"}
+                        className="pagi"
                     />
                 </div>
             </div>

@@ -1,32 +1,6 @@
 /*Nav Brand*/
-
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-  }
+ 
   
-  .App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-  }
-  
-  .App-intro {
-    font-size: large;
-  }
-  
-  @keyframes App-logo-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  @keyframes preloader {
-    0%   {height: 25px;}
-    25%  {height: 40px;}
-    50%  {height: 50px;}
-    75%  {height: 40px;}
-    100% {height: 25px;}
-  }
   
   .brand {
     float: left;
@@ -68,11 +42,11 @@
   transform: rotate(45deg) translate(-8px, -8px);
 }
 /*cart*/
-.cart-buy {
+.cart-icon {
   position: relative;
   margin-right: 10px;
 }
-.cart-buy .amount {
+.cart-icon .cart-quantity {
   color: #000;
   font-size: 12px;
   left: 35%;
@@ -83,12 +57,14 @@
 
   
   /*NavBar*/
-  .newNav{
+  .app-navbar{
+    
     display: flex;
     flex-direction: column;
     position: relative;
   }
-  .mainnav {
+  .main-nav {
+    
     width: 100%;  
     margin: auto;  
     display: flex;
@@ -97,8 +73,9 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    color:#fff;
   }
-  .navul  {
+  .main-nav-list  {
     display: flex;
     flex-direction: row;
     float: right;
@@ -109,22 +86,21 @@
     list-style-type: none;
     align-items: center;
     justify-content: center;
-    
+    color:#fff;    
     
   }
-  .navul li a {
+  .main-nav-list li a {
     color: #fff;
     text-decoration: none;
     margin-right: 25px;    
-    font-size: 15px; 
+    font-size: 18px; 
     font-weight: bold; 
     transition: opacity 0.5s ease; 
   }
 
-  .navul li a:hover {
+  .main-nav-list li a:hover {
     opacity:0.5;
-  }
-  
+  }  
   
   
   .acti {
@@ -132,18 +108,17 @@
     width: 150px;
     height: 60px;
     padding: 0px;
-    color : #000;     
-    font-size: 15px; 
+    color : #fff;     
+    font-size: 18px; 
     font-weight: bold; 
   }
   #drop {
     color: #fff;
   }
-  #dropy {
+  #dropdown-nav {
     position: absolute;
-    z-index: 999;
-    margin: auto;
-    
+    z-index: 1000;
+    margin: auto;    
     margin-top:5px;
     margin-right:10px;
     display: none;
@@ -151,29 +126,31 @@
     background-color: #000;
 
   }
-  .dropdownNav li {
+  .dropdown-nav li {
     text-decoration: none;
     list-style-type: none;
     
   }
    
-  .dropdownNav li a {
+  .dropdown-nav li a {
     
-    text-decoration: none;
-    
-    color : white;
-    font-size: 15px; 
+    text-decoration: none;    
+    color : #fff;
+    font-size: 18px; 
     font-weight: bold;  
     transition: opacity 0.5s ease; 
   }
-  .mainnav .bar-svg {
+  .main-nav .bar-svg {
     display: none;
   }
   
 /*Media Responsive*/
 @media screen and (min-width : 320px)
-and (max-width : 900px) {  
-  .mainnav .bar-svg {
+and (max-width : 900px) { 
+  .main-nav-list{
+    display:none;
+  } 
+  .main-nav .bar-svg {
     display: block;
     margin-right:10px;
   }
@@ -189,9 +166,7 @@ and (max-width : 900px) {
     height: 30px;
     
   }
-  .navul {
-    display: none;
-  }
+  
 
   #barIcon {
     display: block;
@@ -202,8 +177,8 @@ and (max-width : 900px) {
 }
 
 @media screen and (max-width: 900px) {
-  .navul.responsive li {position: relative;}
-  .navul.responsive {
+  .main-nav-list.responsive li {position: relative;}
+  .main-nav-list.responsive {
     z-index: 100;
     position: absolute;
     display: flex;
@@ -216,9 +191,11 @@ and (max-width : 900px) {
     list-style-type: none;
     text-align: left;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-bottom: 100px;
     background-color: #000;
+    height: 500px;
+    
     
   }
   

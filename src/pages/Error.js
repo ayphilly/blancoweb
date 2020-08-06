@@ -1,11 +1,12 @@
+/* eslint-disable */
+
 import React, {Component} from 'react';
 //import error from '../svg/error.svg';
-import error from '../svg/error.svg';
 import './error.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import TypeIt from "typeit";
 import {typing} from '../helper';
+import Particles from 'react-particles-js';
 
 export class Error extends Component {
 
@@ -30,6 +31,34 @@ export class Error extends Component {
                         </Link>
                     </div>
                 </div>
+                <Particles 
+                    className="particles"
+                    params={{ 
+                        particles: { 
+                            number: { 
+                            value: 200, 
+                            density: { 
+                                enable: true, 
+                                value_area: 3000, 
+                            } 
+                            }, 
+                        }, 
+                        interactivity:{
+                            detect_on:"canvas",
+                            events:{
+                                onhover:{
+                                    enable:true,
+                                    mode:"repulse"
+                                },
+                                onclick:{
+                                    enable:true,
+                                    mode:"push"
+                                },
+                                resize:true
+                            }
+                        }
+                    }} 
+                />
             </div>
         )
     }

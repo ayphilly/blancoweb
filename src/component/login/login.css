@@ -21,7 +21,7 @@
     flex-direction: column; 
    
     margin-bottom: 20px;
-    align-content: end;
+    align-content: flex-end;
     align-items: center;
 }
 
@@ -59,6 +59,7 @@ label {
     background-color: none;
     margin-right: 50px;
     padding:20px;
+    outline: none;
 }
 
 .bottom {

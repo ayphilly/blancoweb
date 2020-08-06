@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, {Component} from 'react';
 import './login.css'
 import WOW from 'wow.js' 

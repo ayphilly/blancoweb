@@ -27,6 +27,9 @@ import {Footer} from './component/footer/footer'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+
+import {roundCursor} from './helper';
+
 import {
     faGithubAlt,
     faGoogle,
@@ -48,7 +51,8 @@ class App extends Component {
     }    
 
     componentDidMount () {
-
+        // roundCursor();
+        
         setTimeout (( ) => {
             this.setState({
                 loader : 1
@@ -56,6 +60,7 @@ class App extends Component {
         }, 1000)
 
         clearTimeout();
+        
     }
 
     cartCounter = (counter)=> {
@@ -74,8 +79,9 @@ class App extends Component {
             return (
                 
                 <main>
-                    <div className="classy">
+                    <div className="app-class">
                         <Navbar/>
+                        
                         <Switch>
                             <Route exact path="/" component={Body}  />
                             <Route path="/policy" component={Policy} /> 

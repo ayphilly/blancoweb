@@ -4,27 +4,30 @@
 @import url('https://db.onlinewebfonts.com/c/8e97f88029e50c58d9f0deef4c821a35?family=Autograf+PERSONAL+USE+ONLY');
 .App {
   width: max-width;
-  height: fit-content;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   font-family:'Montserrat',serif;
+  
  
 }
 
-.classy{
+.app-class{
   position: relative;
- height: fit-content;
+ height: 100%;
   width: max-width;
   font-family:'Montserrat',serif;
  
+ 
 }
+
 
 .main {    
   display: flex;
   flex-direction: column;   
   position: relative; 
- height: fit-content;
+ height: 100%;
 }
 
 .preload-container {
@@ -431,7 +434,7 @@ and (max-width : 900px) {
 
   .lil-about-text p {
     font-family: "Autograf PERSONAL USE ONLY";   
-    font-size: 30px;
+    font-size: 25px;
     color: #000;
   }
   

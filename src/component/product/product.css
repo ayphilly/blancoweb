@@ -215,7 +215,7 @@ and (max-width : 900px) {
   }
 
   .item-container {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   
   .item-product {

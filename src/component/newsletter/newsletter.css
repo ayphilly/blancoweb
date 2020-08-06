@@ -6,7 +6,7 @@
     flex-direction: column;    
     position: relative;
     margin-bottom: 100px;
-    align-content: end;
+    align-content: flex-end;
     align-items: center;
 }
 .newsletter-form h3 {
@@ -39,7 +39,7 @@
     background-color: none;
     margin-right: 50px;
     padding: 20px;
-    
+    outline: none;
 }
 
 .button-subscribe{
@@ -112,28 +112,57 @@ and (max-width : 600px) {
 
 }
 
+@media screen and (min-width : 320px)
+and (max-width : 600px){
+    .newss{
+        margin-bottom:20vh;
+    }
+}
+
 @media screen and (min-width : 600px)
-and (min-width : 900px){
-    
+and (max-width : 900px){
+    .newss{
+        margin-bottom:100px;
+    }
+    .sub-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        justify-content: center;
+    }
     .newsletter {
         display: flex;
-        flex-direction: row;    
-        width: 100%;
-        justify-content: center;
+        flex-direction: column;    
+        width: 100%;           
+        
         align-items: center;
+        justify-content: center;
     }
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        justify-content: center;
+
+    }
+    .newsletter-form h3 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+    }
+    
     .subscribe .email-sub {
         display: flex;
         flex-direction: column;
     }
 
     .subscribe input {
-        width: 500px;
+        width: 350px;
         height: 50px;
-        background-color: none;
-        margin-right: 50px;
-        padding: 20px;
-        
+        background-color: none;        
+        padding: 20px;       
     }
 
     .button-subscribe{

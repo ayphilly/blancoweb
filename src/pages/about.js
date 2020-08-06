@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css';
 import {typeAbout} from '../helper';
-import TypeIt from "typeit";
-//import WOW from 'wow.js';
+
 export class About extends Component {
 
     componentDidMount = () => {

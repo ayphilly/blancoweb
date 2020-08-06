@@ -1,41 +1,41 @@
-/* eslint-disable */
+
 import React , {Component} from 'react';
 import './navbar.css';
 import brand from '../../svg/blancow.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WOW from 'wow.js' ;
 import { Link, NavLink } from 'react-router-dom';
-import { TimelineMax, Power2 } from "gsap";
-import {navFunc, barCont} from '../../helper';
+
+import {navFunc, barCont, mySticky} from '../../helper';
 
 export class Navbar extends Component {
     state = {
         disp : true,
         icon : 'angle-down' ,
-        counter : 0
-              
+        counter : 0              
     } 
     componentDidMount (){
-        const wow = new WOW();
-        wow.init();  
-        barCont();
-        
-    }
 
+        barCont();  
+        const wow = new WOW();
+        wow.init(); 
+    }
+   
     cartCounter = ()=> {
-        
-        this.setState({
-            counter: this.state.counter +1
-        })
+        return this.setState(previousState => {
+            return { counter: previousState.counter + 1 }
+        });
+        // this.setState({
+        //     counter: this.state.counter +1
+        // })
         console.log(this.state.counter)
     }
     
     myfunction =  (e) => {
         e.preventDefault();
         
-        if (this.state.disp === true )  {
-             
-            var ele = document.getElementById('dropy');     
+        if (this.state.disp === true )  {             
+            var ele = document.getElementById('dropdown-nav');     
             ele.style.display = "block"; 
             this.setState ({
                 disp : false,
@@ -44,7 +44,7 @@ export class Navbar extends Component {
             
         }  
         else {
-            var eleOff = document.getElementById('dropy');     
+            var eleOff = document.getElementById('dropdown-nav');     
             eleOff.style.display = "none"; 
             this.setState ({
                 disp : true,
@@ -57,14 +57,14 @@ export class Navbar extends Component {
     render () {
           const myIcon = this.state.icon;      
         return (
-            <div className="newNav">
+            <div className="app-navbar" id="myTop">
                 <header>
-                    <div className='mainnav' id="myTopnav">
+                    <div className='main-nav' id="myTopnav">
                         <div className="brand">
                             <img src={brand} className="App-brand" alt="Brand"/>
                         </div>
                         
-                        <ul className='navul' id="navul">
+                        <ul className='main-nav-list' id="main-nav-list">
                             <li > 
                                 <NavLink
                                     exact to="/"                                    
@@ -97,7 +97,7 @@ export class Navbar extends Component {
                                 >
                                     Shop <span onMouseOver={this.myfunction} className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span>
                                 </NavLink>                                
-                                <ul className="dropdownNav" id="dropy">
+                                <ul className="dropdown-nav" id="dropdown-nav">
                                     <li> <a href="#"> T-Sirts </a></li>
                                     <li> <a href="#"> Hoodie </a></li>
                                     <li> <a href="#"> Caps </a></li>
@@ -107,9 +107,9 @@ export class Navbar extends Component {
 
                         </ul>
                         
-                        <div className="cart-buy" onClick={this.cartCounter}>
+                        <div className="cart-icon" onClick={this.cartCounter}>
                             <FontAwesomeIcon icon={['fas', 'shopping-bag'] } style={{ color: 'white', height:30, width:30}} size="2x"  />
-                            <strong className="amount">{this.state.counter}</strong>
+                            <strong className="cart-quantity">{this.state.counter}</strong>
                         </div>
                         <div className="bar-svg">
                             <svg className="hamburger" viewBox="0 0 100 100" width="50pt" xmlns="http://www.w3.org/2000/svg">            

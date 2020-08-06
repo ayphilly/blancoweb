@@ -1,5 +1,8 @@
+/* eslint-disable */
+
 import TypeIt from "typeit";
-import { TimelineMax, Power2 } from "gsap";
+import { TimelineMax, Power2, TweenMax } from "gsap";
+import curDot from 'cursor-dot'
 
 export const typing = () => {
     new TypeIt(".element", {
@@ -46,12 +49,12 @@ export const typeAbout = () => {
 
 export const navFunc = () => {
        
-    var main = document.getElementById('navul');
+    var main = document.getElementById('main-nav-list');
     var ele = main.getElementsByClassName('error-link');
     for (var i =0; i<ele.length; i++) {
         ele[i].addEventListener("click", function() {
-            var mai = document.getElementById('error-li');
-            var current = document.getElementsByClassName("acti");
+            // var mai = document.getElementById('error-li');
+            var current = main.getElementsByClassName("acti");
             current[0].className = current[0].className.replace(" acti", "");
             this.className += " acti";
         });
@@ -62,7 +65,7 @@ export const barCont = () => {
     
 
     const hamburger = document.querySelector('.hamburger');
-    const navb = document.querySelector('.navul');
+    const navb = document.querySelector('.main-nav-list');
     const lineOne = hamburger.querySelector('.l-one');
     const lineTwo = hamburger.querySelector('.l-two');
     const lineThree = hamburger.querySelector('.l-three');
@@ -76,23 +79,50 @@ export const barCont = () => {
         .to(hamburger,.25, {rotation:360, ease:Power2.easeInOut} )
         .to(lineOne, .25, {rotation:45, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross")
         .to(lineThree, .25, {rotation:-45, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross")
-        .fromTo(navb, .25,{y:-300, opacity:0, transformOrigin: "50% 50%", ease: Power2.easeInOut}, {y:6, opacity:1, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross");
+        
+        .from(navb, .25,{x:0, ease: Power2.easeInOut});
+        // .fromTo(navb, .25,{y:-300, opacity:0, transformOrigin: "50% 50%", ease: Power2.easeInOut }, {y:6, opacity:1, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross");
         
         
     
     hamburger.addEventListener('click', _=>{
-        var x = document.getElementById("navul");        
-        if (x.className === "navul") {
+        // var tv = document.getElementById("myTopnav");
+       
+        var x = document.getElementById("main-nav-list");        
+        if (x.className === "main-nav-list") {
            
             x.className += " responsive";
            
         } else {
-            x.className = "navul";
+            x.className = "main-nav-list";
         }
-        tlm.reversed()? tlm.play() :tlm.reverse();
+
+        tlm.reversed()? tlm.play() : tlm.reverse();
+        
     })
 
     
+}
+
+export const roundCursor = () => {
+    const cursor = curDot({
+        zIndex: 1000,
+        // diameter in pixels
+        diameter: 30,
+  
+        // border width
+        borderWidth: 5,
+  
+        // border color
+        borderColor: '#fff',
+  
+        // easing
+        easing: 3,
+  
+        // background
+        background: 'transparent'
+        
+  });
 }
 
 // var ele = document.getElementById('barIcon');
@@ -100,9 +130,7 @@ export const barCont = () => {
 //     ele.classList.toggle('change');
 // })
 
-export const meAlert = (value) => {
-    alert(value)
-}
+
 // barCont = () => {
 
 //     const lt = document.querySelector('.pop-me');
@@ -110,3 +138,6 @@ export const meAlert = (value) => {
 //     tlm.to('.pop-me',2, {rotation:360, ease:Power2.easeInOut}) 
 //     // tlm.reversed()? tlm.play() :tlm.reverse(); 
 // }
+
+
+

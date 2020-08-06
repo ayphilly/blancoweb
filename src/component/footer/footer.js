@@ -16,9 +16,9 @@ export  class Footer extends Component {
                     </div>
                     <div className="footer-links">
                         <ul>
-                            <li> <a href="#"> Privacy Policy </a></li>
-                            <li> <a href="#"> Terms of Use </a></li>
-                            <li> <a href="#"> Copyright Policy  </a></li>
+                            <li> <a href="www.goal.com"> Privacy Policy </a></li>
+                            <li> <a href="www.goal.com"> Terms of Use </a></li>
+                            <li> <a href="www.goal.com"> Copyright Policy  </a></li>
                         </ul>
                     </div>
                     <div className="footer-brand">

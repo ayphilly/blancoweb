@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
 .shopy{
-  height: fit-content;
+  height:auto;
   display:flex;
   flex-direction: row;
   width: 100%;  
@@ -44,20 +44,22 @@
 .shop-product{
   display: flex;
   flex-direction: column;
-  flex: 5;
-  align-items: flex-end;
+  flex: 8;
+  align-items: center;
   /* margin-bottom: -70vh;   */
   margin-bottom: 70px;
-  justify-content: end;
+  justify-content: flex-start;
+
 }
 
 .shop-product .select {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: flex-end;
   width: 100%;  
+  margin-right: 30px;
 }
 .select select {
   width:150px;
@@ -70,27 +72,33 @@
   
 }
 .prod {
-  display: flex;
+  /* display: flex;
   flex-direction: row;  
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-end; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px 50px;
   height: fit-content;
 }
 .bar {
   display: flex;
   flex-direction: column;
   flex: 1; 
-  align-items: end; 
+  align-items: flex-end; 
   padding-left:25px;  
   height: fit-content;
 }
 .shop-bar{  
+  width: 100%;
   color:#000;  
   height: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
 }
 .activ {
   color: gray;
@@ -136,10 +144,12 @@
   display: block;
 }
 .mypost{
-  margin-right:10px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 200px;
+  
 }
 
 .mypost .ba {
@@ -148,5 +158,159 @@
   left:0;
 }
 .post-title {
-  font-size: 3px;
+  font-size: 10px;
 }
+
+ /*Media Responsive*/
+ @media screen and (min-width : 320px)
+ and (max-width : 600px) {  
+  .shopy{
+    height: fit-content;
+    display:flex;
+    flex-direction: row;
+    width: 100%;  
+    padding-top: 100px;
+    margin-bottom: 30vh;
+  
+  }
+   
+  .bar {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end; 
+    padding-left:25px;  
+    height: fit-content;
+    display:none;
+  }
+  .shop-product{
+    width:100%;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    /* margin-bottom: -70vh;   */
+    margin-bottom: 30vh;
+    justify-content: center;
+    
+  }
+  
+  .shop-product .select {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+    width: 78%;  
+ 
+    
+  }
+  .select select {
+    width:100px;
+    height: 30px;
+    border: 2px solid #000;
+    background-color: transparent;
+    color: rgb(82, 82, 82);
+    margin-top: 10px;
+    overflow: scroll;
+
+    
+    
+  }
+  .prod {
+    display: grid;
+    grid-template-columns: auto auto;     
+    align-items: flex-start;
+    justify-content: center;
+    height: fit-content;
+    
+  }
+  
+  .pagination {
+    max-width: 100%;
+    height: 50px;
+    /* display: flex; */
+    list-style: none;
+    outline: none;
+    display:none;
+    
+    overflow: scroll;
+  }
+   
+ 
+ }
+
+ @media screen and (min-width : 600px)
+ and (max-width : 900px) {
+    
+    
+  .shopy{
+    height: fit-content;
+    display:flex;
+    flex-direction: row;
+    width: 100%;  
+    padding-top: 100px;
+    /* margin-bottom: 30vh; */
+  
+  }
+   
+  .bar {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end; 
+    padding-left:25px;  
+    height: fit-content;
+    display:none;
+  }
+  .shop-product{
+    width:100%;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    /* margin-bottom: -70vh;   */
+    margin-bottom: 30vh;
+    justify-content: center;
+    
+  }
+  
+  .shop-product .select {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .select select {
+    width:150px;
+    height: 40px;
+    border: 2px solid #000;
+    background-color: transparent;
+    color: rgb(82, 82, 82);
+    margin-top: 10px;
+    overflow: scroll;    
+    
+  }
+  .prod {
+    display: grid;
+    grid-template-columns: auto auto auto;   
+    grid-gap: 20px 20px;  
+    align-items: flex-start;
+    justify-content: center;
+    height: fit-content;
+    
+  }
+  
+  .pagination {
+    max-width: 100%;
+    height: auto;
+    /* display: flex; */
+    list-style: none;
+    outline: none;
+    display:none;
+    
+    overflow: scroll;
+  }
+ 
+ }

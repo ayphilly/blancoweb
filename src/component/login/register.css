@@ -11,7 +11,7 @@
     flex-direction: column;    
    
     margin-bottom: 20px;
-    align-content: end;
+    align-content: flex-end;
     align-items: center;
 }
 
