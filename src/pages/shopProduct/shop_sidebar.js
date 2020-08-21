@@ -55,7 +55,7 @@ class Sidebar extends React.Component {
                             <li>Sweaties</li>
                             <li>Crewies</li>
                             <li>Bottoms</li>
-                        </ul>
+                    </ul>
                     <li className="accordion">
                             <span className="dropwicon">
                                 Roundies
