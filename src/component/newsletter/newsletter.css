@@ -55,6 +55,9 @@
     font-family: 'Montserrat';
     font-weight: 800;
     margin-left: -10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 
@@ -90,7 +93,7 @@ and (max-width : 600px) {
         background-color: none;
         margin-right: 0px;
         padding: 20px;
-        
+        font-size: 16px;        
     }
 
     .button-subscribe{
@@ -105,6 +108,9 @@ and (max-width : 600px) {
         margin-bottom: 10px;
         font-family: 'Montserrat';
         font-weight: 800;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
        
     }
 
@@ -163,6 +169,7 @@ and (max-width : 900px){
         height: 50px;
         background-color: none;        
         padding: 20px;       
+        font-size: 16px;
     }
 
     .button-subscribe{
@@ -178,7 +185,10 @@ and (max-width : 900px){
         font-family: 'Montserrat';
         font-weight: 800;
         margin-left: -10px;
-}
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
 
 
 }

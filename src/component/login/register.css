@@ -130,6 +130,9 @@ input:focus{
     margin-bottom: 10px;
     font-family: 'Montserrat';
     font-weight: 800;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     
 }
 
@@ -193,80 +196,82 @@ and (max-width : 600px) {
         
     }
 
-    
-.register-form h3 {
-    font-family: 'Montserrat';
-    font-weight: 800;
-    font-size: 20px;
-}
- label {
-     font-family: 'Montserrat';
-     font-size: 10\5px;
-     font-weight: 600;
- }
+        
+    .register-form h3 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 20px;
+    }
+    label {
+        font-family: 'Montserrat';
+        font-size: 10\5px;
+        font-weight: 600;
+    }
 
-.names {
-    display: flex;
-    flex-direction: column;
-      
-    width: 100%;
-}
-.names .first-name, .last-name {
-    display: flex;
-    flex-direction: column;
-    margin-top:15px;
-}
+    .names {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+    }
+    .names .first-name, .last-name {
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+    }
 
-.names input {
-    width: 300px;
-    height: 30px;
-    background-color: none;
-    margin-right: 0px;
-    padding: 20px;
-    
-}
+    .names input {
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin-right: 0px;
+        padding: 20px;
+        font-size: 16px;
+    }
 
-.contact {
-    display: flex;
-    flex-direction: column;    
-    margin-top:5px;
-    
-}
+    .contact {
+        display: flex;
+        flex-direction: column;    
+        margin-top:5px;
+        
+    }
 
-.contact .mail, .phone-number {
-    display: flex;
-    flex-direction: column;
-    margin-top:15px;
-}
+    .contact .mail, .phone-number {
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+    }
 
-.contact input {
-    width: 300px;
-    height: 30px;
-    background-color: none;
-    margin-right: 0px;
-    padding:20px;
-}
+    .contact input {
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin-right: 0px;
+        padding:20px;
+        font-size: 16px;
+    }
 
-.password-input {
-    display: flex;
-    flex-direction: column;    
-    margin-top:5px;    
-    
-}
+    .password-input {
+        display: flex;
+        flex-direction: column;    
+        margin-top:5px;    
+        
+    }
 
-.password-input .pword, .c-pword {
-    display: flex;
-    flex-direction: column;
-    margin-top:15px;
-}
+    .password-input .pword, .c-pword {
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+    }
 
-.password-input input {
-    width: 300px;
-    height: 30px;
-    background-color: none;
-    margin-right: 0px;
-    padding:20px;
-}    
+    .password-input input {
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin-right: 0px;
+        padding:20px;
+        font-size: 16px;
+    }    
     
 
 }
@@ -288,80 +293,83 @@ and (max-width : 900px) {
         
     }
 
-    
-.register-form h3 {
-    font-family: 'Montserrat';
-    font-weight: 800;
-    font-size: 20px;
-}
- label {
-     font-family: 'Montserrat';
-     font-size: 10\5px;
-     font-weight: 600;
- }
+        
+    .register-form h3 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 20px;
+    }
+    label {
+        font-family: 'Montserrat';
+        font-size: 10\5px;
+        font-weight: 600;
+    }
 
-.names {
-    display: flex;
-    flex-direction:row;
-      
-    width: 100%;
-}
-.names .first-name, .last-name {
-    display: flex;
-    flex-direction: column;
-    margin-top:15px;
-}
+    .names {
+        display: flex;
+        flex-direction:row;
+        
+        width: 100%;
+    }
+    .names .first-name, .last-name {
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+    }
 
-.names input {
-    width: 300px;
-    height: 30px;
-    background-color: none;
-    margin-right: 25px;
-    padding: 20px;
-    
-}
+    .names input {
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin-right: 25px;
+        padding: 20px;
+        font-size: 16px;
+        
+    }
 
-.contact {
-    display: flex;
-    flex-direction: row;    
-    margin-top:5px;
-    
-}
+    .contact {
+        display: flex;
+        flex-direction: row;    
+        margin-top:5px;
+        
+    }
 
-.contact .mail, .phone-number {
-    display: flex;
-    flex-direction: column;
-    margin-top:15px;
-}
+    .contact .mail, .phone-number {
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+    }
 
-.contact input {
-    width: 300px;
-    height: 30px;
-    background-color: none;
-    margin-right: 25px;
-    padding:20px;
-}
+    .contact input {
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin-right: 25px;
+        padding:20px;
+        font-size: 16px;
+    }
 
-.password-input {
-    display: flex;
-    flex-direction: row;    
-    margin-top:5px;    
-    
-}
+    .password-input {
+        display: flex;
+        flex-direction: row;    
+        margin-top:5px;    
+        
+    }
 
-.password-input .pword, .c-pword {
-    display: flex;
-    flex-direction: column;
-    margin-top:15px;
-}
+    .password-input .pword, .c-pword {
+        display: flex;
+        flex-direction: column;
+        margin-top:15px;
+    }
 
-.password-input input {
-    width: 300px;
-    height: 30px;
-    background-color: none;
-    margin-right: 25px;
-    padding:20px;
-}    
+    .password-input input {
+        width: 300px;
+        height: 30px;
+        background-color: none;
+        margin-right: 25px;
+        padding:20px;
+        font-size: 16px;
+    }    
     
 
 }

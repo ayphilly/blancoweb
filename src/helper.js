@@ -63,8 +63,10 @@ export const navFunc = () => {
 
 export const barCont = () => {
     
+    
 
     const hamburger = document.querySelector('.hamburger');
+    const mNav = document.querySelector('.mobile-nav');
     const navb = document.querySelector('.main-nav-list');
     const lineOne = hamburger.querySelector('.l-one');
     const lineTwo = hamburger.querySelector('.l-two');
@@ -80,7 +82,8 @@ export const barCont = () => {
         .to(lineOne, .25, {rotation:45, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross")
         .to(lineThree, .25, {rotation:-45, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross")
         
-        .from(navb, .25,{x:0, ease: Power2.easeInOut});
+        .from(navb, .25,{x:0, ease: Power2.easeInOut})
+        .fromTo(mNav, .25,{y:-200, x:0, opacity:0,ease: Power2.easeInOut }, {y:0,x:0, opacity:1, ease: Power2.easeInOut}, "cross");
         // .fromTo(navb, .25,{y:-300, opacity:0, transformOrigin: "50% 50%", ease: Power2.easeInOut }, {y:6, opacity:1, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross");
         
         

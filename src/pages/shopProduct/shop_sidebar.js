@@ -1,4 +1,4 @@
-import React, {Fragment}  from 'react';
+import React  from 'react';
 import './shop.css';
 //import {Preload} from './Preload';
 import WOW from 'wow.js' 

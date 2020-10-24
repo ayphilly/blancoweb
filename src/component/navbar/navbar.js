@@ -4,9 +4,9 @@ import './navbar.css';
 import brand from '../../svg/blancow.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WOW from 'wow.js' ;
-import { Link, NavLink } from 'react-router-dom';
+import {NavLink } from 'react-router-dom';
 
-import {navFunc, barCont, mySticky} from '../../helper';
+import {navFunc, barCont} from '../../helper';
 
 export class Navbar extends Component {
     state = {
@@ -126,7 +126,51 @@ export class Navbar extends Component {
                             <div className="bar3"></div>
                         </div>                     */}
                     </div>
-                </header>                
+                </header>     
+                <div class="mobile-nav">
+                <ul className='mobile-nav-list' id="mobile-nav-list">
+                            <li > 
+                                <NavLink
+                                    exact to="/"                                    
+                                    activeClassName="acti"                                    
+                                >
+                                    Home
+                                </NavLink>
+                                
+                            </li>
+                            <li >
+                                <NavLink
+                                    to="/about"                                    
+                                    activeClassName="acti" 
+                                >
+                                    About Us
+                                </NavLink>                                
+                            </li>
+                            {/* <li>
+                                <NavLink
+                                    to="/signin"                                    
+                                    activeClassName="acti"
+                                >
+                                    Sign-in
+                                </NavLink>                                 
+                            </li> */}
+                            {/* <li> 
+                                <NavLink
+                                    to="/shop"                                    
+                                    activeClassName="acti"
+                                >
+                                    Shop <span onMouseOver={this.myfunction} className="wow bounceInUp"><FontAwesomeIcon icon={['fas', myIcon, ]}  />  </span>
+                                </NavLink>                                
+                                <ul className="dropdown-nav" id="dropdown-nav">
+                                    <li> <a href="#"> T-Sirts </a></li>
+                                    <li> <a href="#"> Hoodie </a></li>
+                                    <li> <a href="#"> Caps </a></li>
+                                </ul>
+                            </li> */}
+                            
+
+                        </ul>
+                </div>           
             </div>
         )
     }
