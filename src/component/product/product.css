@@ -171,7 +171,7 @@
      
     
   }
-  .round-red , .round-blue, .round-w {
+  .round-red , .round-blue, .round-white, .round-black {
     margin: 5px;
   }
   .round-red {
@@ -186,13 +186,22 @@
     height: 20px;
     border-radius: 100%;
     background-color: blue;
-  }
   
-  .round-w{
+  }
+
+  .round-black{
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-color: green;
+    background-color: black;
+  }
+  
+  .round-white{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 2px solid grey;
   }
   
   .round-red:hover, .round-blue:hover , .round-w:hover{

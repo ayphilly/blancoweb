@@ -142,5 +142,3 @@ export const roundCursor = () => {
 //     // tlm.reversed()? tlm.play() :tlm.reverse(); 
 // }
 
-
-

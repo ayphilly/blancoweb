@@ -12,7 +12,7 @@ export class Navbar extends Component {
     state = {
         disp : true,
         icon : 'angle-down' ,
-        counter : 0              
+                     
     } 
     componentDidMount (){
 
@@ -21,15 +21,15 @@ export class Navbar extends Component {
         wow.init(); 
     }
    
-    cartCounter = ()=> {
-        return this.setState(previousState => {
-            return { counter: previousState.counter + 1 }
-        });
-        // this.setState({
-        //     counter: this.state.counter +1
-        // })
-        console.log(this.state.counter)
-    }
+    // cartCounter = ()=> {
+    //     return this.setState(previousState => {
+    //         return { counter: previousState.counter + 1 }
+    //     });
+    //     // this.setState({
+    //     //     counter: this.state.counter +1
+    //     // })
+    //     console.log(this.state.counter)
+    // }
     
     myfunction =  (e) => {
         e.preventDefault();
@@ -109,7 +109,7 @@ export class Navbar extends Component {
                         
                         <div className="cart-icon" onClick={this.cartCounter}>
                             <FontAwesomeIcon icon={['fas', 'shopping-bag'] } style={{ color: 'white', height:30, width:30}} size="2x"  />
-                            <strong className="cart-quantity">{this.state.counter}</strong>
+                            <strong className="cart-quantity">{this.props.counter}</strong>
                         </div>
                         <div className="bar-svg">
                             <svg className="hamburger" viewBox="0 0 100 100" width="50pt" xmlns="http://www.w3.org/2000/svg">            

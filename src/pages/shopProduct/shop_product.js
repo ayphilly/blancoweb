@@ -1,3 +1,4 @@
+import { _colorStringFilter } from 'gsap/gsap-core'
 import React , {Component} from 'react'
 
 import {PictureSlider} from '../../component/pictureslider'
@@ -7,7 +8,14 @@ export class ShopProduct extends Component {
     
     state = {
         volume : 1,
-        size : ''
+        size : '',
+        color : ''
+    }
+
+    componentDidMount () {
+        const {handle} = this.props.match.params;
+       
+       
     }
     onSize = (e) =>{
         e.preventDefault();
@@ -35,7 +43,29 @@ export class ShopProduct extends Component {
         }  
         return;
     }
+
+    getColor = (e) => {
+        
+        var element = e.target.className;        
+        var colorParent = document.getElementById("productcolors")
+        var current = colorParent.getElementsByClassName("colorBorder");
+        current[0].className = current[0].className.replace(" colorBorder", "");
+        e.target.className += " colorBorder";
+        var color = element.split("-")[1]
+        this.setState({
+            color: color
+        })
+        
+    }
+
+    addToCart= () => {
+        // localStorage.setItem('cartNumber', this.props.cartNumero)
+        this.props.cartCounter();      
+
+    }
+    
     render () {
+        
         return (
             <div className="shopProduct-container">
                 <div className="shopProduct-ima">
@@ -66,16 +96,16 @@ export class ShopProduct extends Component {
                 </div>
                 <div className="shopProduct-information-container">
                     <div className="shopProduct-information">
-                        <div className="information-name">Simpson Collection</div>
+                        <div className="information-name">Simpson Collection  ID :: {this.props.match.params.id} </div>
                         <div className="information-price"> <strong> $50</strong></div>
                         <div className="information-color">
-                            <p> Color : </p>
-                            <div className="colors-roundr">
-                                <div className="round-red"></div>
-                                <div className="round-blue"></div>
-                                <div className="round-w"></div>
-                                <div className="round-red"></div>
-                                <div className="round-blue"></div>
+                            <p> Color : {this.state.color}</p>
+                            <div className="colors-roundr" id ="productcolors">
+                                <div className="round-red colorBorder" onClick={this.getColor}></div>
+                                <div className="round-blue" onClick={this.getColor}></div>
+                                <div className="round-white" onClick={this.getColor}></div>
+                                <div className="round-black" onClick={this.getColor}></div>
+                                
                             </div>
                         </div>
                         <div className="information-size">
@@ -104,7 +134,7 @@ export class ShopProduct extends Component {
                                 <button className="button-increase" onClick={this.increase}>+</button>
 
                             </div>
-                            <button className="button-cart">ADD TO CART</button>
+                            <button className="button-cart" onClick={this.addToCart}>ADD TO CART</button>
                             <button className="button-buy">BUY NOW</button>
                         </div>
                     </div>

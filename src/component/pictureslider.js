@@ -6,15 +6,13 @@ import 'react-animated-css';
 import 'popper.js';
 import Product1 from '../pictures/7.png'
 import Product2 from '../pictures/11.png'
-
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import WOW from 'wow.js' 
+import WOW from 'wow.js' 
+
 export class PictureSlider extends Component {
 
-    componentDidMount = () =>  {
-       
-        
-    }
+    
     state = {
         
         pictures : [
@@ -33,6 +31,17 @@ export class PictureSlider extends Component {
         ]
 
     }
+    
+    componentWillMount = () =>  {
+        const wow = new WOW();
+        wow.init();       
+        setTimeout(()=> {
+            document.querySelector(".aspect-ratio").style.display="none";
+            // alert("basat")
+        }, 60)
+        clearTimeout();
+        
+    }
 
     Picture_array = this.state.pictures.map( (value, index ) => {
         return (
@@ -45,7 +54,7 @@ export class PictureSlider extends Component {
 
     render () {
         return (
-            <div id="shopproduct" className="carousel slide" data-wow-duration="1s" data-ride="carousel">
+            <div id="shopproduct" className="carousel slide carousel-fade"  data-ride="carousel">
                 <ol className="carousel-indicators" id="shopproduct-ind" style={{bottom:"-10px"}}>
                     <li data-target="#shopproduct" data-slide-to="0" className="active"></li>
                     <li data-target="#shopproduct" data-slide-to="1"></li>
@@ -53,9 +62,9 @@ export class PictureSlider extends Component {
                     <li data-target="#shopproduct" data-slide-to="3"></li>
                 </ol>
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img className="d-block w-100" src={Product2} alt="First slide"/>
-                       
+                    <div className="carousel-item active holder">
+                        <div className="aspect-ratio"></div>
+                        <img className="d-block w-100 wow fadeInDown" src={Product2} alt="First slide"/>
                     </div>
                     
                     {this.Picture_array}

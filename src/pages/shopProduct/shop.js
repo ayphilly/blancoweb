@@ -7,6 +7,7 @@ import Sidebar from './shop_sidebar'
 import './shop.css'
 
 export default class Shop extends Component {
+    
     constructor(props) {
         super(props);
         this.state = {

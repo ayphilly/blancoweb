@@ -11,12 +11,41 @@ import VaderSim from '../pictures/webbb.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WOW from 'wow.js' 
 export class Slider extends Component {
+    state = {
+        carousels : [
+           
+            {
+                slider : Slider1,
+                sliderHeader : "Merch",
+                sliderText : "well crafted merchandise"
+            },
+            {
+                slider : Slider2,
+                sliderHeader : "Merch",
+                sliderText : "well crafted merchandise"
+            },
+            {
+                slider : VaderSim,
+                sliderHeader : "Merch",
+                sliderText : "well crafted merchandise"
+            },
 
+        ]
+    }
     componentDidMount = () =>  {
         const wow = new WOW();
         wow.init();
         
     }
+
+    mySliders = this.state.carousels.map((value, index ) => {
+        return (
+           <HomeSlider
+                key={index}
+                data={value}  
+           />
+        );
+    });
 
     render () {
         return (
@@ -28,7 +57,7 @@ export class Slider extends Component {
                     <li data-target="#carouselIndicators" data-slide-to="3"></li>
                 </ol>
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
+                    <div className="carousel-item active sholder">
                         <img className="d-block w-100" src={Slider0} alt="First slide"/>
                         <div className="carousel-wordr">
                                 <h5>Merch</h5>
@@ -40,32 +69,7 @@ export class Slider extends Component {
                                 <button type="button" className="btn btn-outline-light">SHOP</button>
                         </div>   
                     </div>
-                    <div className="carousel-item ">
-                        <img className="d-block w-100" src={Slider1} alt="Second slide"/>
-                        <div className="carousel-word">
-                                <h5>Merch</h5>
-                                <p>well crafted merchandise</p>
-                                <div className="slider-icon">
-                                    <FontAwesomeIcon icon={['fas', 'angle-double-down'] }  size="3x" />
-                                </div>
-                                <button type="button" className="slider-btn btn btn-outline-light" >SHOP</button>
-                        </div>                                               
-                    </div>
-                    <div className="carousel-item">
-                        <img className="d-block w-100" src={Slider2} alt="Third slide"/>
-                        <div className="carousel-wordr">
-                                <h5>Merch</h5>
-                                <p>well crafted merchandise</p>
-                                <div className="slider-icon">
-                                    <FontAwesomeIcon icon={['fas', 'angle-double-down'] }  size="3x" />
-                                </div>
-                                <button type="button" className="btn btn-outline-light">SHOP</button>
-                        </div>
-                        
-                    </div>
-                    <div className="carousel-item ">
-                        <img className="d-block w-100" src={VaderSim} alt="Fourth slide"/>
-                    </div>
+                    {this.mySliders.slice(1,3)}                   
                 </div>
                 <a className="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,4 +82,22 @@ export class Slider extends Component {
             </div>
         )
     }
+}
+
+const HomeSlider = ({data} ) => {
+   
+    return (
+        <div className="carousel-item">
+            <img className="d-block w-100" src={data.slider} alt="Third slide"/>
+           { data.slider === VaderSim ? <div></div> : <div className="carousel-wordr">
+                    <h5>{data.sliderHeader}</h5>
+                    <p>{data.sliderText}</p>
+                    <div className="slider-icon">
+                        <FontAwesomeIcon icon={['fas', 'angle-double-down'] }  size="3x" />
+                    </div>
+                    <button type="button" className="btn btn-outline-light">SHOP</button>
+            </div>}
+            
+        </div>
+    );        
 }

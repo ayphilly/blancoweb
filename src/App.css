@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:bold');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 @import url('https://db.onlinewebfonts.com/c/8e97f88029e50c58d9f0deef4c821a35?family=Autograf+PERSONAL+USE+ONLY');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 .App {
   width: max-width;
   height: 100%;
@@ -170,9 +172,9 @@
 
 .lil-about {
   background-color: #fff;
-  width: 100%;
+  width: 100%;  
   text-align: center;
-  height:20vh;
+  height:35vh;
 
 }
 .lil-about-main {
@@ -189,13 +191,32 @@
   width: 50%;  
 }
 .lil-about-text p {
-  font-family: "Autograf PERSONAL USE ONLY";   
+  /* font-family: "Autograf PERSONAL USE ONLY";    */
+  font-family: 'Rock Salt', cursive;
   font-size: 50px;
   color: #000;
 }
+.holder {
+  position: relative;
+  width:100%;
+  height:500px;
+}
 
+.sholder {
+  position: relative;
+  width:100%;
+  height:700px;
+}
 
-
+.aspect-ratio {
+  /* min-height: 400px; */
+  background-color:transparent;
+  /* background-color:red; */
+  /* position: absolute; */
+  /* width: 100%; */
+  min-height:500px;
+  /* z-index: -1; */
+}
 
 
 /*round colors*/

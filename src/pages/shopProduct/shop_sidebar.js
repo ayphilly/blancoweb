@@ -77,6 +77,15 @@ class Sidebar extends React.Component {
                     <li>Buckets</li>                       
                 </ul>
             </div>
+
+            <div className="apparel">
+                <h4>Accessories</h4>
+                <ul>
+                    <li>Socks</li>                       
+                    {/* <li>Buckets</li>                        */}
+                </ul>
+            </div>
+            
         </div>                
             
             

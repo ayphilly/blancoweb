@@ -47,12 +47,16 @@ library.add (fas,
 class App extends Component {
 
     state = {
-        loader : ''
+        loader : '',
+        counter: ''
     }    
 
     componentDidMount () {
         // roundCursor();
-        
+       
+        this.setState({
+            counter : localStorage.getItem('cartNumber')
+        })
         setTimeout (( ) => {
             this.setState({
                 loader : 1
@@ -63,9 +67,24 @@ class App extends Component {
         
     }
 
-    cartCounter = (counter)=> {
-        this.counter++
+    cartCounter = ()=> {
+        // localStorage.setItem('cartNumber', this.state.counter)
+        // return this.setState(previousState => {
+        //     return { counter: parseInt(previousState.counter) + 1 }
+        // }, localStorage.setItem('cartNumber', this.state.counter));
+
+        this.setState({
+            counter : parseInt(this.state.counter) + 1
+        },this.getLocalItem)
+        
+        
     }
+
+    getLocalItem = () => {
+        const {counter} = this.state;
+        localStorage.setItem('cartNumber', counter)
+    }
+
     render () {
         if (this.state.loader === '') {
             return (
@@ -80,7 +99,7 @@ class App extends Component {
                 
                 <main>
                     <div className="app-class">
-                        <Navbar/>
+                        <Navbar counter = { this.state.counter}/>
                         
                         <Switch>
                             <Route exact path="/" component={Body}  />
@@ -89,7 +108,8 @@ class App extends Component {
                             <Route path="/signin" component={SignIn} />
                             <Route path="/register" component={Register} />
                             <Route path="/login" component={Login} />
-                            <Route path="/shopy" component={ShopProduct} />
+                            {/* <Route path="/shopy/:id" component={ShopProduct} /> */}
+                            <Route path="/shopy/:id" render = { (props)=> <ShopProduct {...props} cartCounter={this.cartCounter} cartNumero ={this.state.counter}/> } />
                             <Route path="/cart" component={Cart} />
                             <Route component={Error} />
                         </Switch>

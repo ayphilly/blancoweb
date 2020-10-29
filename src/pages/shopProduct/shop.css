@@ -61,6 +61,9 @@
   width: 100%;  
   margin-right: 30px;
 }
+
+
+/* Filters */
 .select select {
   width:150px;
   height: 40px;
@@ -71,24 +74,15 @@
   overflow: scroll;
   
 }
-.prod {
-  /* display: flex;
-  flex-direction: row;  
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-end; */
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 50px 50px;
-  height: fit-content;
-}
+
 .bar {
   display: flex;
   flex-direction: column;
   flex: 1; 
   align-items: flex-end; 
   padding-left:25px;  
-  height: fit-content;
+  height: 100%;
+  /* background-color: whitesmoke; */
 }
 .shop-bar{  
   width: 100%;
@@ -104,14 +98,19 @@
   color: gray;
 }
 
+
+
+/* Sidebar Style */
 .apparel {
-  width: 10vh;
+  width: 100%;
   height: auto;
+  /* background-color: purple; */
   
 }
 .apparel  ul {
   list-style: none;
   text-decoration: none;
+  width:100%;
 }
 
 .apparel h4 {
@@ -124,7 +123,11 @@
   cursor: pointer;
   font-family: 'montserrat';
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
+  /* background-color: red; */
+  width:100%;
+  float:left;
+  margin-left:-30px;
 }
 
 .dropwicon{
@@ -143,13 +146,37 @@
 .dropactive {
   display: block;
 }
+
+
+/* Singular product */
+
+.prod {
+  /* display: flex;
+  flex-direction: row;  
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end; */
+  width:95%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* justify-content: space-evenly; */
+  grid-gap: 25px 50px;
+  height: fit-content;
+  /* background-color:red; */
+  overflow: hidden;
+  margin-left:50px;
+}
 .mypost{
-  width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 200px;
+  height: 400px;
   
+}
+.mypost img {
+  width:320px;
+  height: 480px;
 }
 
 .mypost .ba {

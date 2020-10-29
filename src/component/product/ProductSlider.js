@@ -117,11 +117,13 @@ export class ProductSlider extends Component {
                             <h3>NEW PRODUCTS</h3>
                     </div>
                     <div className='container' id="slider-d" >            
-                        <OwlCarousel items={this.state.boxone.length}  
-                        className="owl-theme"  
-                        id="owl-theme"
-                        {...this.state.options}
-                        autoplay={true}
+                        <OwlCarousel
+                            items={this.state.boxone.length}  
+                            className="owl-theme"  
+                            id="owl-theme"
+                            {...this.state.options}
+                            autoplay={true}
+                            lazyLoad = {true}
                         > 
                         
                         {this.products}
