@@ -35,26 +35,32 @@ export class Cart extends React.Component {
     }
 
     componentDidMount( ) {
-        this.myCartTo();
+        var totalAmount = 0;
+        this.state.carty.forEach(element => {
+            console.log(element)
+            totalAmount += element.total; 
+        });
+        
+        this.setState({
+            myAmount: totalAmount
+        }) 
     }
-    myCartTo = async () =>{
-        var mmcart=this.state.carty;
-        if (this.state.carty.length <=0) {
+    myCartTo = async (...carty) =>{        
+        if (this.state.carty.length <= 0) {
             this.setState({
                 myAmount:0
             });
         }else {
             var totalAmount = 0;        
-            mmcart.forEach(element => {
-            totalAmount += element.price;
-            this.setState({
-                myAmount:totalAmount
-            });
-        });  
+            carty[0].forEach(element => {
+                console.log(element)
+                totalAmount += element.total;                        
+            });  
+            return totalAmount;
         }
                   
     }
-    DelCartItem = id => { 
+    DelCartItem = (id )=> { 
         const lt = document.querySelector('#Capa_'+id);   
         const trt = document.querySelector('#tr_'+id);        
         const tlm = new TimelineMax();
@@ -62,16 +68,14 @@ export class Cart extends React.Component {
             .to(lt,1, {opacity:.5, ease:Power2.easeInOut})
             .to(trt,.5, {opacity:0, ease:Power2.easeInOut});
         tlm.play();
-        setTimeout(() => {
-            this.setState(state => {
-                const carty = state.carty.filter(item => item.id !== id);                
-                return {
-                    carty,
-                };
-            });
-
-           
-            
+        setTimeout( async () => {
+            const carty = this.state.carty.filter(item => item.id !== id);
+            var total = await this.myCartTo(carty);
+            this.setState({
+                ...this.state.carty,
+                carty:carty,
+                myAmount:total
+            }) 
         }, 3000);
     }
 

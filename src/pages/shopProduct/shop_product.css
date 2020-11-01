@@ -11,7 +11,7 @@ filter: invert(100%);
 }
 
 .shopProduct-container{
-  height: 100%;
+  height: 100vh;
   max-width: 100%;
   display: flex;
   flex-direction: row;  
@@ -21,6 +21,7 @@ filter: invert(100%);
   /* background: linear-gradient(76deg, #fde1ff, #e0e7ff, #e0f9ff, #fffae9, #e8eaff, #ffe3f7, #daf1ff, #fde1ff, #e0e7ff, #e0f9ff, #fffae9, #e8eaff, #ffe3f7, #daf1ff, #fde1ff, #e0e7ff, #e0f9ff, #fffae9, #e8eaff, #ffe3f7, #daf1ff);
   position: relative;
   animation: sime 5s infinite; */
+
 }
 @keyframes sime {
   0% {

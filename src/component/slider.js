@@ -16,13 +16,13 @@ export class Slider extends Component {
            
             {
                 slider : Slider1,
-                sliderHeader : "Merch",
-                sliderText : "well crafted merchandise"
+                sliderHeader : "Shop",
+                sliderText : "for your Tee"
             },
             {
                 slider : Slider2,
-                sliderHeader : "Merch",
-                sliderText : "well crafted merchandise"
+                sliderHeader : "Shop",
+                sliderText : "and for your Streetwear apparel"
             },
             {
                 slider : VaderSim,
@@ -60,13 +60,12 @@ export class Slider extends Component {
                     <div className="carousel-item active sholder">
                         <img className="d-block w-100" src={Slider0} alt="First slide"/>
                         <div className="carousel-wordr">
-                                <h5>Merch</h5>
-                                <p>well crafted merchandise</p>
+                                {/* <h5>Shop</h5> */}
+                                <p> Shop for your  graphic tee </p>
                                 <div className="slider-icon">
                                     <FontAwesomeIcon icon={['fas', 'angle-double-down'] }  size="3x" />
-                                </div>
-                                 
-                                <button type="button" className="btn btn-outline-light">SHOP</button>
+                                </div>                                 
+                                {/* <button type="button" className="btn btn-outline-light slider-button">SHOP</button> */}
                         </div>   
                     </div>
                     {this.mySliders.slice(1,3)}                   
@@ -90,12 +89,12 @@ const HomeSlider = ({data} ) => {
         <div className="carousel-item">
             <img className="d-block w-100" src={data.slider} alt="Third slide"/>
            { data.slider === VaderSim ? <div></div> : <div className="carousel-wordr">
-                    <h5>{data.sliderHeader}</h5>
+                    {/* <h5>{data.sliderHeader}</h5> */}
                     <p>{data.sliderText}</p>
                     <div className="slider-icon">
                         <FontAwesomeIcon icon={['fas', 'angle-double-down'] }  size="3x" />
                     </div>
-                    <button type="button" className="btn btn-outline-light">SHOP</button>
+                    {/* <button type="button" className="btn btn-outline-light">SHOP</button> */}
             </div>}
             
         </div>
