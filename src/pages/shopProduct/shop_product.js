@@ -7,15 +7,22 @@ import './shop_product.css'
 export class ShopProduct extends Component {
     
     state = {
+        id : '',
         volume : 1,
         size : '',
-        color : ''
+        color : '',
+        product : {
+            name : "simpson",
+            price : 20,           
+
+        }
     }
 
     componentDidMount () {
-        const {handle} = this.props.match.params;
-       
-       
+        this.setState({
+            id : this.props.match.params.id
+        })
+        
     }
     onSize = (e) =>{
         e.preventDefault();
@@ -60,7 +67,15 @@ export class ShopProduct extends Component {
 
     addToCart= () => {
         // localStorage.setItem('cartNumber', this.props.cartNumero)
-        this.props.cartCounter();      
+        this.props.cartCounter();     
+        var product = this.state.product;
+        console.log(product);
+        console.log(typeof product);
+        product.color = this.state.color;
+        product.volume = this.state.volume;
+        product.id = this.state.id;
+        localStorage.setItem("userProduct", JSON.stringify(product) );
+        // product.add({volume : this.state.volume}) 
 
     }
     

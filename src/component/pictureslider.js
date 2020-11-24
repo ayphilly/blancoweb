@@ -6,7 +6,6 @@ import 'react-animated-css';
 import 'popper.js';
 import Product1 from '../pictures/7.png'
 import Product2 from '../pictures/11.png'
-import {LazyLoadImage} from 'react-lazy-load-image-component';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import WOW from 'wow.js' 
 

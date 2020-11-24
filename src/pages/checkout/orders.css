@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+
+.myorders {
+    height: 50%;
+    /* background-color: slategrey; */
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+hr {
+    
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #000;
+    width:100%;
+  }
+.myorders h2 {
+    font-family: Montserrat;  
+    font-size:24px;
+    font-weight: 700;
+}
+.myorders .orders-products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:fit-content;
+    /* background-color: purple; */
+
+}
+.orders-products .products-head {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    align-content: center;
+}
+.products-head p {
+    font-family: Montserrat;  
+    font-size: 16px;
+    color: #000;
+}
+.orders-products .singlar-product {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 100px;
+    align-content: center;
+    
+}
+
+.singlar-product :nth-child(1) {
+    color:#000;  
+    font-family: Montserrat;  
+    font-size: 14px;
+    font-weight: 500;
+    width:50%;
+}
+.singlar-product :nth-child(2) {
+    color:#000;    
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.myorders .orders-total {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:fit-content;
+    /* background-color: red; */
+
+}
+
+.orders-total .orders-subtotal,.orders-ship, .orders-subtax, .orders-tt {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    align-content: center;
+}
+
+.orders-subtotal :nth-child(2), .orders-subtax :nth-child(2), .orders-ship :nth-child(2) {
+    font-weight: 500;
+}
+
+.orders-tt :nth-child(1) , .orders-tt :nth-child(2) {
+    font-weight: 800;
+}
+.myorders .orders-payment {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height:fit-content;
+     margin-top:10px;
+     /* background-color: pink; */
+}
+
+.orders-payment h5 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.orders-payment p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.orders-payment :nth-child(2) {
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+
+.orders-payment :nth-child(3) {
+    margin-top: 15px;
+}
+
+.orders-payment .paystack {
+    width: 500px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+.orders-create {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    text-align: center;  
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}
+
+.myorders .orders-delivery {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    
+
+}

@@ -15,6 +15,7 @@ import {Policy} from './pages/policy'
 import {Navbar} from './component/navbar/navbar'
 //import {Slider} from './slider'
 
+import {Checkout} from './pages/checkout/checkout'
 //user
 import {SignIn} from './pages/sign-in/sign-in'
 import {Error} from './pages/Error.js'
@@ -111,6 +112,7 @@ class App extends Component {
                             {/* <Route path="/shopy/:id" component={ShopProduct} /> */}
                             <Route path="/shopy/:id" render = { (props)=> <ShopProduct {...props} cartCounter={this.cartCounter} cartNumero ={this.state.counter}/> } />
                             <Route path="/cart" component={Cart} />
+                            <Route path="/checkout" component={Checkout} />
                             <Route component={Error} />
                         </Switch>
                         <Footer/>

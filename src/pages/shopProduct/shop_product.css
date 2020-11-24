@@ -278,44 +278,57 @@ and (max-width : 900px) {
   
   .shopProduct-container{
     max-width: 100%;
-    
+    height:200vh;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    
   }
   
   .shopProduct-ima {
-  display: flex;
-  flex-direction: column;
-  flex:1 1 0;
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+    
+    flex:1 1 0;
+    /* margin-top:50px; */
   
   }
   .shopProduct-information-container {
     text-align: center;
-    margin:0 auto;
+    
+    width:100%;
+    /* margin:0 auto; */
     display: flex;
     flex-direction: column;
-    flex:1 1 0;
-    justify-content: center;
-    align-content: center;
+    flex:2 0 0;
+    justify-content: flex-start;
+    /* align-content: center; */
     align-items: center;
+    /* background-color: purple; */
+    /* margin-top:-300px; */
   }
 
   .information-name {
     font-size: 30px;
     font-weight: bold;
-    width: 100%;
-    height: 30px;
+    width: 70%;
+    height: 100px;
     text-align: center;
+    margin: 0 auto;
   }
   .information-price {
     margin: 0 auto;
     font-size: 20px;
     font-weight: bold;
     color:#000;
-    width: 100px;
+    width: 100%;
     height: 30px;
     margin-top: 10px;
     text-align: center;
+    
   
   }
   .information-color {
@@ -325,31 +338,44 @@ and (max-width : 900px) {
     align-items: center;
     justify-content: center;
     align-content: center;
-    width: 250px;
+    width: 100%;
     height: 40px;
     margin-top: 10px;
     padding: 0;
     margin-bottom: 30px;
+    
   
   }
 
   .information-size {
     margin: 0 auto;
     text-align: center;
-    width: 250px;
+    width: 100%;
     height: 100px;
     margin-top: 10px;
+    
     
   }
 
   .information-size .size-box {    
     display:flex;
     flex-direction: column;
-    flex-grow: 0;  
+    /* flex-grow: 0;   */
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;        
+    margin: 0 auto;    
+   
+    width:100%;    
+  }
+
+  .shopProduct-button-cont .shopProduct-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
   }
 
 

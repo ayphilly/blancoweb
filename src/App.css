@@ -344,6 +344,11 @@
 @media screen and (min-width : 320px)
 and (max-width : 600px) {
 
+  .holder {
+    position: relative;
+    width:100%;
+    height:auto;
+  }
   .lil-about-text p {
     font-family: "Autograf PERSONAL USE ONLY";   
     font-size: 30px;
@@ -462,6 +467,130 @@ and (max-width : 600px) {
 }
 
 /*Media Responsive*/
+@media screen and (min-width : 350px)
+and (max-width : 600px) {
+
+  .lil-about-text p {
+    font-family: "Autograf PERSONAL USE ONLY";   
+    font-size: 25px;
+    color: #000;
+  }
+  
+
+  
+  .carousel-wordr {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .carousel-word {
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .carousel-wordr h5 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    
+  }
+  
+  .carousel-wordr p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -10px;
+  }
+  
+  .carousel-word h5 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    
+  }
+  
+  .carousel-word p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  
+
+  .item-container {
+    margin-left: 20px;
+  }
+  
+  .item-product {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+  #item-product-cont {
+    display: flex;
+    flex-direction: row; 
+    
+  }
+
+  .item-imaqe{  
+    width: 320px;
+    justify-content: center;
+  }
+  .item-text {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+  }
+
+  #carousel-inner {
+    display: flex;
+    flex-direction: column;  
+    
+  }
+
+  .item-text .price {
+    
+    margin: 0 0 18px;
+    font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    color: #3d4246;
+    /*color: blue;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top:  -10px;
+  }
+
+  .clist-ima img{  
+    width: 210px;  
+  }
+  
+}
+
+
+
 @media screen and (min-width : 600px)
 and (max-width : 900px) {
 

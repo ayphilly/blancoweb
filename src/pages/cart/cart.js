@@ -2,6 +2,8 @@ import React from 'react';
 import './cart.css';
 import {CartSingle} from './cartSingle';
 import { TimelineMax, Power2 } from "gsap";
+import { Link } from 'react-router-dom';
+import {Checkout} from "../checkout/checkout";
 export class Cart extends React.Component {
 
     constructor(props) {
@@ -91,7 +93,7 @@ export class Cart extends React.Component {
                             <th>Price</th>
                             <th>Quantity</th>
                             <th>Total</th>
-                            <th>pop</th>
+                            <th>Remove</th>
                         </tr>
                         </tbody>
                         
@@ -130,7 +132,7 @@ export class Cart extends React.Component {
                         </div>
                     </div>                   
                     <div className="cart-button">                           
-                        <button className="button-cout">CHECKOUT</button>
+                        <button className="button-cout"><Link className="cart-link" to="/checkout" style={{textDecoration:'none'}}>CHECKOUT</Link></button>
                         <button className="button-cs">CONTINUE SHOPPING</button>
                     </div>   
                 </div>

@@ -160,6 +160,26 @@ tr td {
     border: 3px solid #000;
 }
 
+.cart-link {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    text-decoration-color: #000;
+    text-decoration: underline;
+    
+}
+
+.button-cout:hover .cart-link{
+    
+    color: #000;
+    font-weight: 800;
+    text-decoration-color: #000;
+    text-decoration: underline;
+    
+    
+}
+
 
 /*Media Responsive*/
 @media screen and (min-width : 320px)

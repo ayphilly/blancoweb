@@ -4,15 +4,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .register-form {   
-    margin-top:20px;
+    /* margin-top:20px; */
     display: flex;
     flex-direction: column;    
-   
+    overflow: hidden;
     margin-bottom: 20px;
-    align-content: flex-end;
+    /* align-content: flex-end; */
     align-items: center;
+    height: fit-content;
+    /* background-color: purple; */
 }
 
 .register-form h3 {
@@ -25,12 +28,21 @@
      font-size: 10\5px;
      font-weight: 600;
  }
+/* form {
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
 
 .names {
     display: flex;
     flex-direction: row;
-      
+    height:100px;
     width: 100%;
+    padding-bottom:10px
+    
 }
 .names .first-name, .last-name {
     display: flex;
@@ -39,18 +51,20 @@
 
 .names input {
     width: 500px;
-    height: 50px;
+    min-height: 50px;
     background-color: none;
+    box-sizing: border-box;
     margin-right: 50px;
-    padding: 20px;
+    padding-left: 10px;
     
 }
 
 .contact {
     display: flex;
-    flex-direction: row;    
-    margin-top: 10px;
-    
+    flex-direction: row; 
+    height:100px;
+    width: 100%;
+    padding-bottom:10px;
 }
 
 .contact .mail, .phone-number {
@@ -68,9 +82,11 @@
 
 .password-input {
     display: flex;
-    flex-direction: row;    
-    margin-top: 10px;
-    
+    flex-direction: row;
+    height:100px;
+    width: 100%;
+    padding-bottom:10px;
+
 }
 
 .password-input .pword, .c-pword {
@@ -89,29 +105,28 @@
 .bottom {
     display: flex;
     flex-direction: column;
-
-    
+    margin-top:20px;
 }
 .bottom .c-box{
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
 }
 
 
-input {
+/* input {
     background-color: transparent;
     color: rgb(14, 14, 14);
     border: 3px solid #000;
-    font-size: 20px;  
-}
+    font-size: 16px;  
+    padding-left:10px; 
+} */
 
-input:focus{
-    background-color:none;
-    outline-color: #000;
-    border-color: #000;
-    outline-width: 0ch;
-}
+/* input:focus{
+    outline-style: solid;
+    outline-color: #986fa5;
+    outline-offset: 0;
+    background-color: red;
+} */
 .check-mark {
     display: flex;
     flex-direction: row;
