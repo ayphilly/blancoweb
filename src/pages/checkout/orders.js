@@ -1,10 +1,10 @@
 import React, {Component, useState, useEffect} from "react"
 import "./orders.css";
 import paystack from '../../pictures/paystack.png'
-export const Orders = () => {
+export const Orders = (props) => {
     return (
         <div className="myorders">
-            <h2> 👚 Your Orders</h2>
+            <h2> 👕  Your Orders</h2>
             <div className="orders-products">
                 <div className="products-head">
                     <p>Product(s)</p>
@@ -19,6 +19,7 @@ export const Orders = () => {
                 </div>
                 
             </div>
+            <hr/>
             <div className="orders-total">
                 <div className="orders-subtotal">
                     <p>Subtotal</p>
@@ -45,7 +46,7 @@ export const Orders = () => {
                 <h5>Debit/credit Cards</h5>
                 <p>Make payment using your debit and credit cards</p>
                 <div className="paystack">
-                    <img className="d-block" src={paystack} alt="paystack"/>                  
+                    <img className="d-block" src={paystack} alt="paystack"/>                
 
                 </div>
                 
@@ -56,7 +57,7 @@ export const Orders = () => {
                     privacy policy.
                 </p>
 
-                <button type="submit" className="orders-create">Place Order</button>       
+                <button type="submit" className="orders-create">{props.totalAmount}</button>       
 
             </div>
 

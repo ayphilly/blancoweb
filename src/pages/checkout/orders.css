@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
 
 .myorders {
-    height: 50%;
-    /* background-color: slategrey; */
-    width: 70%;
+    height: 70%;
+    background-color: slategrey;
+    width: 75%;
     display:flex;
     flex-direction: column;
+    padding: 40px;
     margin-top: 150px;
+    background-color: rgb(242, 241, 242);
+    border-radius: 10px;
 }
 hr {
     
@@ -47,7 +50,7 @@ hr {
     display: flex;
     justify-content: space-between;
     width:100%;
-    height: 100px;
+    height: fit-content;
     align-content: center;
     
 }
@@ -83,7 +86,7 @@ hr {
 }
 
 .orders-subtotal :nth-child(2), .orders-subtax :nth-child(2), .orders-ship :nth-child(2) {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .orders-tt :nth-child(1) , .orders-tt :nth-child(2) {
@@ -148,5 +151,34 @@ hr {
     width: 100%;
     height: 30px;
     
+
+}
+
+@media screen and (max-width: 576px) {
+    .myorders {
+        height: 75%;
+        background-color: slategrey;
+        width: 80%;
+        display:flex;
+        flex-direction: column;
+        padding: 40px;
+        margin-top: 150px;
+        background-color: rgb(242, 241, 242);
+        border-radius: 10px;
+    }
+    .orders-payment .paystack {
+        width: 100%;
+        height: 50px;
+        overflow:hidden;
+        /* margin-bottom: 15px; */
+        /* display: none; */
+    }
+    .orders-payment .paystack img {
+        width: 100%;        
+        /* height: 100%; */
+    }
+    .orders-payment :nth-child(3) {
+        margin-top: 10px;
+    }
 
 }

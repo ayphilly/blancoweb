@@ -3,7 +3,7 @@ import './cart.css';
 import {CartSingle} from './cartSingle';
 import { TimelineMax, Power2 } from "gsap";
 import { Link } from 'react-router-dom';
-import {Checkout} from "../checkout/checkout";
+// import {Checkout} from "../checkout/checkout";
 export class Cart extends React.Component {
 
     constructor(props) {

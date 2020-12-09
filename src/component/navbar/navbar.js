@@ -127,7 +127,7 @@ export class Navbar extends Component {
                         </div>                     */}
                     </div>
                 </header>     
-                <div class="mobile-nav">
+                <div className="mobile-nav">
                 <ul className='mobile-nav-list' id="mobile-nav-list">
                             <li > 
                                 <NavLink
