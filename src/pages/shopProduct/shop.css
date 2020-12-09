@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
 .shopy{
-  height:auto;
+  height:160vh;
   display:flex;
   flex-direction: row;
   width: 100%;  
@@ -161,7 +161,8 @@
   grid-template-columns: auto auto auto;
   /* justify-content: space-evenly; */
   grid-gap: 25px 50px;
-  height: fit-content;
+  /* height: fit-content; */
+  height: 150vh;
   /* background-color:red; */
   overflow: hidden;
   margin-left:50px;

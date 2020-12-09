@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./checkout.css"
 import { Link } from 'react-router-dom';
 import {Orders} from "./orders"
@@ -17,7 +17,11 @@ export const Checkout = () => {
   const [city, setCity] = useState("")
   const [town, setTown] = useState("")
   const [country, setCountry] = useState("")
+  
 
+  
+
+  
   const componentProps = {
     email,
     amount,
@@ -43,7 +47,7 @@ export const Checkout = () => {
           <form  onSubmit={(e) =>   e.preventDefault()}>      
            
                 <h2>                    
-                    CheckOut
+                    CheckOut 
                 </h2>
                 <h6>
                     Contact Information

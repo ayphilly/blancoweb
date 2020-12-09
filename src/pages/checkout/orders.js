@@ -2,6 +2,11 @@ import React, {Component, useState, useEffect} from "react"
 import "./orders.css";
 import paystack from '../../pictures/paystack.png'
 export const Orders = (props) => {
+    
+    const [cartNumber, setItems] = useState("");
+    useEffect(() => {
+       setItems(localStorage.getItem('cartNumber'));    
+    })
     return (
         <div className="myorders">
             <h2> 👕  Your Orders</h2>
@@ -12,7 +17,7 @@ export const Orders = (props) => {
                 </div>
                 <div className="singlar-product">
                     <p>
-                        Blanco Mischief Tshirt x 2
+                        Blanco Mischief Tshirt x { cartNumber  }
                     </p>
 
                     <p> ₦ 15,000.00 </p>
