@@ -48,7 +48,8 @@ margin-bottom: 40px;
 .clist-cont {  
 width: 100%;
 display: flex;
-flex-direction: column;   
+flex-direction: column;  
+cursor: pointer; 
 
 }
 
