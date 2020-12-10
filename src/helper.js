@@ -128,6 +128,17 @@ export const roundCursor = () => {
   });
 }
 
+export const cartpop = () => {
+    const pop = document.querySelector(".cart-popup");
+    const tlm = new TimelineMax({paused:true, reversed:true});
+    tlm
+        .from (pop, 5, {top:700, opacity:1,ease: Power2.easeInOut})
+        .to(pop, 3 , {top:800, opacity:0,ease: Power2.easeInOut});
+        
+    tlm.reversed()? tlm.play() : tlm.reverse();
+        // .to(pop, .5 ,{opacity: 0, ease: Power2.easeInOut});
+}
+
 // var ele = document.getElementById('barIcon');
 //     ele.addEventListener('click',function (){
 //     ele.classList.toggle('change');

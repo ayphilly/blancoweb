@@ -3,6 +3,7 @@ import React , {Component} from 'react'
 
 import {PictureSlider} from '../../component/pictureslider'
 import './shop_product.css'
+import {cartpop} from "../../helper"
 
 export class ShopProduct extends Component {
     
@@ -13,7 +14,7 @@ export class ShopProduct extends Component {
         color : '',
         product : {
             name : "simpson",
-            price : 20,           
+            price : 20,          
 
         }
     }
@@ -68,13 +69,24 @@ export class ShopProduct extends Component {
     addToCart= () => {
         // localStorage.setItem('cartNumber', this.props.cartNumero)
         this.props.cartCounter();     
-        var product = this.state.product;
-        console.log(product);
-        console.log(typeof product);
+        var product = this.state.product;        
         product.color = this.state.color;
         product.volume = this.state.volume;
         product.id = this.state.id;
+        if (localStorage.getItem("userProduct")) {
+            this.setState({
+                ...this.state,
+                volume :this.state.volume + 1,
+                product:{
+                    ...this.state.product,                    
+                }
+            })
+            product.volume =product.volume+1;
+            
+
+        }
         localStorage.setItem("userProduct", JSON.stringify(product) );
+        cartpop();
         // product.add({volume : this.state.volume}) 
 
     }
@@ -153,6 +165,11 @@ export class ShopProduct extends Component {
                             <button className="button-buy">BUY NOW</button>
                         </div>
                     </div>
+                    
+                </div>
+                <div className="cart-popup">
+                    
+                    <p>Added <strong>{this.state.product.name}</strong> to the cart</p>
                     
                 </div>
             </div>
