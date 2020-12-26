@@ -188,6 +188,31 @@
 .post-title {
   font-size: 10px;
 }
+.load-container {
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.load-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+@keyframes load-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.load-section img {
+  width: 70px;
+  height: 70px;
+  animation: load-spin infinite 2s linear;
+}
 
  /*Media Responsive*/
  @media screen and (min-width : 320px)
