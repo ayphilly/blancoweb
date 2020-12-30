@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
 .shopy{
-  height:160vh;
+  height:100%;
   display:flex;
   flex-direction: row;
   width: 100%;  
   padding-top: 100px;
+  /* margin-bottom: 100px; */
+  /* background-color: red; */
 
 }
 
@@ -13,6 +15,8 @@
   display: flex;
   list-style: none;
   outline: none;
+  position: relative;  
+  /* background-color: yellow; */
 }
 .pagination > .active > a{
   background-color: #000 ;
@@ -48,8 +52,10 @@
   align-items: center;
   /* margin-bottom: -70vh;   */
   margin-bottom: 70px;
-  justify-content: flex-start;
-
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  
 }
 
 .shop-product .select {
@@ -151,20 +157,14 @@
 /* Singular product */
 
 .prod {
-  /* display: flex;
-  flex-direction: row;  
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-end; */
+  position: relative;
   width:95%;
   display: grid;
   grid-template-columns: auto auto auto;
-  /* justify-content: space-evenly; */
-  grid-gap: 25px 50px;
-  /* height: fit-content; */
-  height: 150vh;
-  /* background-color:red; */
-  overflow: hidden;
+  grid-template-rows: auto auto auto; 
+  grid-gap: 25px 50px;  
+  height: 100%;  
+  overflow: none;
   margin-left:50px;
 }
 .mypost{
@@ -218,12 +218,12 @@
  @media screen and (min-width : 320px)
  and (max-width : 600px) {  
   .shopy{
-    height: fit-content;
+    height: 100%;
     display:flex;
-    flex-direction: row;
-    width: 100%;  
+    flex-direction: column;
+    /* width: 100%;   */
     padding-top: 100px;
-    margin-bottom: 30vh;
+    /* margin-bottom: 30vh; */
   
   }
    
@@ -235,6 +235,7 @@
     padding-left:25px;  
     height: fit-content;
     display:none;
+    background-color: pink;
   }
   .shop-product{
     width:100%;
@@ -243,7 +244,11 @@
     align-items: center;
     /* margin-bottom: -70vh;   */
     margin-bottom: 30vh;
-    justify-content: center;
+    justify-content: space-between;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
     
   }
   
@@ -254,7 +259,7 @@
     align-items: center;
     justify-content: space-around;
     width: 78%;  
- 
+    /* background-color: red; */
     
   }
   .select select {
@@ -270,22 +275,41 @@
     
   }
   .prod {
+    position: relative;
     display: grid;
-    grid-template-columns: auto auto;     
-    align-items: flex-start;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;    
+    grid-gap: 0px 0px;   
+    align-items: center;
     justify-content: center;
-    height: fit-content;
+    height: 100%;
+    width: 100%;
     
+    
+  }
+  .mypost{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: fit-content;
+    margin-left: -10px;
+    
+    
+  }
+  .mypost img {
+    width:180px;
+    height: 250px;
   }
   
   .pagination {
-    max-width: 100%;
-    height: 50px;
+    max-width: 80%;
+    height: 80px;
     /* display: flex; */
     list-style: none;
     outline: none;
     display:none;
-    
+    padding: 20px;
     overflow: scroll;
   }
    

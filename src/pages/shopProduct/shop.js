@@ -13,12 +13,12 @@ export default class Shop extends Component {
         this.state = {
             offset: 0,
             data: [],
-            perPage: 20,
+            perPage: 9,
             currentPage: 0,
             post:[],
             available:false
             
-        };
+        }
         this.handlePageClick = this
             .handlePageClick
             .bind(this);
@@ -121,7 +121,7 @@ export default class Shop extends Component {
                             containerClassName={"pagination"}
                             subContainerClassName={"pages pagination"}
                             activeClassName={"active"}
-                            className="pagi"
+                            className="pagiReact"
                         />
                     </div>
                 </div>

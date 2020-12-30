@@ -82,7 +82,7 @@ export const barCont = () => {
         .to(lineOne, .25, {rotation:45, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross")
         .to(lineThree, .25, {rotation:-45, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross")
         
-        .from(navb, .25,{x:0, ease: Power2.easeInOut})
+        // .from(navb, .25,{x:0, ease: Power2.easeInOut})
         .fromTo(mNav, .25,{y:-200, x:0, opacity:0,ease: Power2.easeInOut }, {y:0,x:0, opacity:1, ease: Power2.easeInOut}, "cross");
         // .fromTo(navb, .25,{y:-300, opacity:0, transformOrigin: "50% 50%", ease: Power2.easeInOut }, {y:6, opacity:1, transformOrigin: "50% 50%", ease: Power2.easeInOut}, "cross");
         
@@ -91,14 +91,14 @@ export const barCont = () => {
     hamburger.addEventListener('click', _=>{
         // var tv = document.getElementById("myTopnav");
        
-        var x = document.getElementById("main-nav-list");        
-        if (x.className === "main-nav-list") {
+        // var x = document.getElementById("main-nav-list");        
+        // if (x.className === "main-nav-list") {
            
-            x.className += " responsive";
+        //     x.className += " responsive";
            
-        } else {
-            x.className = "main-nav-list";
-        }
+        // } else {
+        //     x.className = "main-nav-list";
+        // }
 
         tlm.reversed()? tlm.play() : tlm.reverse();
         
