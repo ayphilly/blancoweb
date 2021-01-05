@@ -39,7 +39,7 @@
 .names {
     display: flex;
     flex-direction: row;
-    height:100px;
+    height:103px;
     width: 100%;
     padding-bottom:10px
     
@@ -289,6 +289,9 @@ and (max-width : 600px) {
     }    
     
 
+}
+.formerror {
+    color:red;
 }
 
 /*Media Responsive*/
